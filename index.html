@@ -618,7 +618,7 @@ body[data-mode="deck"] .deck-hint{display:block;position:fixed;bottom:14px;right
   var root=document.documentElement, body=document.body;
   // theme
   var stored=null; try{stored=localStorage.getItem('f6535-theme')}catch(e){}
-  var pref=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';
+  var pref='light';
   var qs=new URLSearchParams(location.search), forced=qs.get('theme');
   root.dataset.theme=forced||stored||pref;
   var tb=document.getElementById('theme-btn');
