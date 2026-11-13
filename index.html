@@ -371,6 +371,66 @@ body[data-mode="deck"] .rv{opacity:1!important;transform:none!important}
 .deck-hint{display:none}
 body[data-mode="deck"] .deck-hint{display:block;position:fixed;bottom:14px;right:16px;font-family:var(--mono);font-size:11px;color:var(--muted)}
 
+/* ---- appendix ---- */
+section.appendix > h2::before{content:"§ " counter(sec,decimal-leading-zero) "  ·  APPENDIX A"}
+.appendix h3.ah{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 12px;font-family:var(--serif);font-size:clamp(17px,2vw,21px);font-weight:800;margin:58px 0 16px;line-height:1.5}
+.appendix h3.ah i{font-style:normal;font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.1em;color:var(--accent-ink);background:var(--accent);padding:2px 9px;border-radius:99px;transform:translateY(-2px)}
+.appendix h3.ah:first-of-type{margin-top:30px}
+.appendix .ap{margin:0 0 18px;color:var(--ink-2);max-width:74ch;font-size:15.5px}
+.appendix .ap.muted{color:var(--muted);font-size:14px;margin-top:14px}
+.appendix .note{margin:14px 0 0;font-size:12.5px;color:var(--muted);line-height:1.8;padding-left:14px;border-left:2px solid var(--line)}
+.appendix .note a{word-break:break-all}
+.appendix .data-table td:first-child{white-space:nowrap}
+.tsl{display:inline-block;font-family:var(--mono);font-size:10.5px;font-weight:500;letter-spacing:.02em;color:var(--accent);background:var(--accent-soft);padding:1px 8px;border-radius:99px;white-space:nowrap;vertical-align:baseline;margin-left:2px;transition:background .15s,color .15s}
+.tsl:hover{background:var(--accent);color:var(--accent-ink);text-decoration:none}
+.stag{display:inline-block;font-size:11px;font-weight:650;letter-spacing:.06em;padding:1px 9px;border-radius:99px;vertical-align:baseline}
+.stag.mtg{color:var(--accent);background:var(--accent-soft)}
+.stag.pub{color:var(--gold);background:var(--gold-soft)}
+.flow.c3{grid-template-columns:repeat(3,1fr)}
+.stat b small{font-size:.38em;font-family:var(--sans);margin-left:4px;letter-spacing:0}
+.stat p .tsl{margin-left:4px}
+/* lanes */
+.lanes{display:grid;gap:14px;margin:6px 0 4px}
+.lane{padding:20px 22px;border-radius:var(--r);background:var(--panel);border:1px solid var(--line-soft);box-shadow:var(--shadow);position:relative;overflow:hidden}
+.lane::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--muted);opacity:.5}
+.lane.new::before{background:var(--grad);opacity:1}
+.lane-h{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 16px;margin-bottom:14px}
+.lane-h b{font-size:14.5px;font-weight:700}
+.lane-h span{font-family:var(--mono);font-size:11.5px;color:var(--muted)}
+.lane.new .lane-h span{color:var(--accent)}
+.lane ol{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 0;counter-reset:ln}
+.lane li{counter-increment:ln;position:relative;padding:9px 16px 9px 38px;margin-right:26px;border-radius:12px;font-size:13.5px;color:var(--ink-2);
+  background:color-mix(in srgb,var(--ink) 4%,transparent);border:1px solid var(--line-soft)}
+.lane li::before{content:counter(ln);position:absolute;left:10px;top:50%;transform:translateY(-50%);width:19px;height:19px;border-radius:50%;display:grid;place-items:center;
+  font-family:var(--mono);font-size:10.5px;background:var(--line);color:var(--ink)}
+.lane.new li{background:var(--accent-soft);border-color:color-mix(in srgb,var(--accent) 28%,transparent)}
+.lane.new li::before{background:var(--accent);color:var(--accent-ink)}
+.lane li:not(:last-child)::after{content:"";position:absolute;right:-19px;top:50%;width:8px;height:8px;border-top:2px solid var(--gold);border-right:2px solid var(--gold);transform:translateY(-50%) rotate(45deg)}
+/* curve */
+figure.curve{margin:20px 0 0;padding:18px 18px 12px;border-radius:var(--r);background:var(--panel);border:1px solid var(--line-soft);box-shadow:var(--shadow)}
+figure.curve svg{display:block;width:100%;max-width:620px;height:auto;margin:0 auto}
+figure.curve .ax{stroke:var(--line);stroke-width:1.5}
+figure.curve .c-on{stroke:var(--accent);stroke-width:3.5;stroke-linecap:round;filter:drop-shadow(0 4px 8px color-mix(in srgb,var(--accent) 45%,transparent))}
+figure.curve .c-off{stroke:var(--warn);stroke-width:3;stroke-linecap:round}
+figure.curve .lb{font-size:12px;fill:var(--muted);font-family:var(--sans)}
+figure.curve .lb.on{fill:var(--accent);font-weight:700}
+figure.curve .lb.off{fill:var(--warn);font-weight:700}
+figure.curve figcaption{margin-top:8px;text-align:center;font-size:12px;color:var(--muted)}
+figure.curve path{stroke-dasharray:900;stroke-dashoffset:0;transition:stroke-dashoffset 1.8s cubic-bezier(.3,.7,.2,1) .2s}
+.rv:not(.in) figure.curve path{stroke-dashoffset:900}
+/* ladder */
+.ladder{display:grid;gap:12px}
+.rung{position:relative;display:grid;grid-template-columns:96px 1fr;gap:4px 22px;padding:18px 22px 18px 24px;border-radius:var(--r);background:var(--panel);border:1px solid var(--line-soft);box-shadow:var(--shadow)}
+.rung::before{content:"";position:absolute;left:0;top:14px;bottom:14px;width:4px;border-radius:0 4px 4px 0;background:var(--muted);opacity:.45}
+.rung.done::before{background:var(--accent);opacity:1}
+.rung.part::before{background:var(--gold);opacity:1}
+.rung em{grid-row:1/3;align-self:start;font-style:normal;font-size:11.5px;font-weight:700;letter-spacing:.06em;text-align:center;padding:4px 0;border-radius:99px;color:var(--muted);background:var(--line-soft)}
+.rung.done em{color:var(--accent);background:var(--accent-soft)}
+.rung.part em{color:var(--gold);background:var(--gold-soft)}
+.rung b{font-size:15px;font-weight:700}
+.rung p{margin:0;font-size:13.5px;color:var(--ink-2);line-height:1.75}
+.rung.todo{border-style:dashed}
+
 /* ---- responsive ---- */
 @media (max-width:1024px){
   nav.rail{position:fixed;inset:58px auto 0 0;width:260px;background:var(--panel);border-right:1px solid var(--line);
@@ -382,6 +442,7 @@ body[data-mode="deck"] .deck-hint{display:block;position:fixed;bottom:14px;right
   .hero p.lede{max-width:none}
   .flow{grid-template-columns:1fr 1fr}
   .flow div::after{display:none!important}
+  .flow.c3{grid-template-columns:1fr}
   .two-col{grid-template-columns:1fr}
   .stats{grid-template-columns:1fr}
   .risk article{grid-template-columns:1fr;gap:8px}
@@ -399,6 +460,11 @@ body[data-mode="deck"] .deck-hint{display:block;position:fixed;bottom:14px;right
   .key{padding:16px 14px}
   .key p{font-size:11.5px}
   .flow{grid-template-columns:1fr}
+  .rung{grid-template-columns:1fr;padding:16px 16px 16px 20px}
+  .rung em{grid-row:auto;justify-self:start;padding:2px 12px}
+  .lane li{margin-right:0}
+  .lane li::after{display:none}
+  .appendix h3.ah{margin-top:44px}
   .bars{padding:6px 16px}
   .bar-row{grid-template-columns:1fr 70px;gap:8px 12px;padding:14px 0}
   .bar-label{grid-column:1/2}
@@ -449,7 +515,7 @@ body[data-mode="deck"] .deck-hint{display:block;position:fixed;bottom:14px;right
 <div class="shell">
 <div class="layout">
 <nav class="rail" aria-label="章節">
-<a href="#hero" data-target="hero">總覽</a><a href="#highlights" data-target="highlights">五個重點</a><a href="#pipeline" data-target="pipeline">試驗全景</a><a href="#timeline" data-target="timeline">開發時間軸</a><a href="#s207" data-target="s207">207 收案</a><a href="#s206" data-target="s206">206 首例</a><a href="#evt" data-target="evt">第二張藥證</a><a href="#deal" data-target="deal">授權與報價</a><a href="#cart" data-target="cart">CAR-T armor</a><a href="#crispr" data-target="crispr">CRISPR</a><a href="#risk" data-target="risk">風險</a><a href="#lexicon" data-target="lexicon">名詞釋義</a><a href="#transcript" data-target="transcript">完整逐字稿</a>
+<a href="#hero" data-target="hero">總覽</a><a href="#highlights" data-target="highlights">五個重點</a><a href="#pipeline" data-target="pipeline">試驗全景</a><a href="#timeline" data-target="timeline">開發時間軸</a><a href="#s207" data-target="s207">207 收案</a><a href="#s206" data-target="s206">206 首例</a><a href="#evt" data-target="evt">第二張藥證</a><a href="#deal" data-target="deal">授權與報價</a><a href="#cart" data-target="cart">CAR-T armor</a><a href="#crispr" data-target="crispr">CRISPR</a><a href="#risk" data-target="risk">風險</a><a href="#appx-invivo" data-target="appx-invivo">附錄 A：in vivo CAR-T</a><a href="#lexicon" data-target="lexicon">名詞釋義</a><a href="#transcript" data-target="transcript">完整逐字稿</a>
 </nav>
 
 <main>
@@ -474,7 +540,7 @@ body[data-mode="deck"] .deck-hint{display:block;position:fixed;bottom:14px;right
     <h2>五個重點</h2>
     <p class="sub">依逐字稿整理，時間碼可點回原文。</p>
     <ol class="lead-list"><li><p><strong>206 第一例的影像結果被具體描述</strong>：給藥前 M2 完全阻塞、給藥後 7 天百分之百打通，症狀明確緩解（約第 26 分鐘）。公司同時強調「這就是第一例」。</p></li><li><p><strong>207 收案進度首次給出可查數字</strong>：30 家目標中心、28 家通過倫理、19 家啟動、累計入組 2 人，目標一年內完成 300 人（約第 22-23 分鐘）。</p></li><li><p><strong>取栓合併（第二張藥證）有前置數據</strong>：以 203 試驗為基礎（單劑量＋EVT 安全性），明年啟動二期（約第 15、30 分鐘）。</p></li><li><p><strong>CAR-T armor 的商業模式講明白了</strong>：只授權 p40 armor 的 IP、不自建細胞製造；美國專利已於去年取得，任何人要用 p40 做 CAR-T 進美國需經順藥授權（約第 46-47 分鐘）。</p></li><li><p><strong>順藥 2.0 三引擎定位</strong>：LT3001（取證／授權）＋ in vivo CAR-T armor ＋ 次世代 CRISPR（約第 50 分鐘）。</p></li></ol>
-    <figure class="pull"><blockquote>我們是用 300 個人來回答這一題，我就只收我想要收的病人，看看我的療效訊號，來回答他我們不是事後分析，是前瞻性的療效確認。</blockquote><figcaption>葉聖文，總經理　<a class="ts" href="#t-3130">31:30</a></figcaption></figure>
+    <figure class="pull"><blockquote>我們是用 300 個人來回答這一題，我就只收我想要收的病人，看看我的療效訊號，來回答他我們不是事後分析，是前瞻性的療效確認。</blockquote><figcaption>葉聖文，總經理　<a class="ts" href="#t-003130">31:30</a></figcaption></figure>
   </section>
 
   <section class="block" id="pipeline">
@@ -511,7 +577,7 @@ body[data-mode="deck"] .deck-hint{display:block;position:fixed;bottom:14px;right
       <div><b>02 影像追蹤</b><p>至少三次腦血管影像，看 AOL 評分是否改善</p></div>
       <div><b>03 第七天</b><p>首例血管百分之百打通，症狀明確緩解</p></div>
     </div>
-    <figure class="pull"><blockquote>所以影像上去初步的證明在這一例的患者裡，他的血栓是溶掉的，血管是打通的。那他們很興奮，我們也很興奮，但我們也知道這就是第一例。</blockquote><figcaption>葉聖文，總經理　<a class="ts" href="#t-2555">25:55</a></figcaption></figure>
+    <figure class="pull"><blockquote>所以影像上去初步的證明在這一例的患者裡，他的血栓是溶掉的，血管是打通的。那他們很興奮，我們也很興奮，但我們也知道這就是第一例。</blockquote><figcaption>葉聖文，總經理　<a class="ts" href="#t-002555">25:55</a></figcaption></figure>
   </section>
 
   <section class="block" id="evt">
@@ -563,6 +629,7 @@ body[data-mode="deck"] .deck-hint{display:block;position:fixed;bottom:14px;right
       <div><b>04 授權 IP</b><p>不做細胞製造，按靶點分別授權給 CAR-T 開發商</p></div>
     </div>
     <p class="sub" style="margin-top:16px">公司口述美國專利已於 2025 年取得；任何人要用 p40 做 CAR-T 進美國，需經順藥授權。</p>
+    <p class="sub" style="margin-top:10px">想看 CAR-T 與 in vivo 的背景、近年交易、p40 機制與目前證據層級，請見 <a href="#appx-invivo">附錄 A：in vivo CAR-T 與 p40 armor</a>。</p>
   </section>
 
   <section class="block" id="crispr">
@@ -577,9 +644,109 @@ body[data-mode="deck"] .deck-hint{display:block;position:fixed;bottom:14px;right
     <div class="risk"><article><h3><span>看點 01</span><strong>207：登記狀態與公司說法有時間差</strong></h3><p>ClinicalTrials.gov（NCT07754825）顯示「尚未招募」、預定起始 2026-12-01、最後更新 2026-10-19；公司於說明會表示 19 家中心已啟動、2 人入組。兩者時間點不同，登記資料可能尚未更新。</p></article><article><h3><span>看點 02</span><strong>202／205 屬事後分析</strong></h3><p>公司自述買方第一個質疑就是「事後分析」，207 正是為回答這題而設計，結果未出前不宜當確認性療效。</p></article><article><h3><span>看點 03</span><strong>劑量關係不線性</strong></h3><p>低劑量在部分族群優於高劑量，公司以「中樞神經不易建立漂亮劑量關係」解釋，這是三期設計的潛在爭點。</p></article><article><h3><span>看點 04</span><strong>CAR-T 平台尚無自家臨床數據</strong></h3><p>人類證據來自授權方與動物模型；公司自述做 CAR-T 的技術成熟度不如已耕耘十年的同業。</p></article><article><h3><span>看點 05</span><strong>報價不等於成交</strong></h3><p>日本與印度的提案都只是 recognition，公司明確表示要全球整包。</p></article></div>
   </section>
 
+    <section class="block appendix" id="appx-invivo">
+    <h2>In vivo CAR-T 與 p40 armor：從概念到商業路徑</h2>
+    <p class="sub">本附錄補充說明會中講得較簡略的部分。標示 <span class="stag mtg">說明會</span> 的內容整理自葉聖文總經理的說明，附時間碼可點回逐字稿；標示 <span class="stag pub">公開資訊</span> 的內容來自產業公開報導，附來源連結。</p>
+
+    <h3 class="ah"><i>A1</i>先理解 CAR-T：把免疫細胞改造成「會認腫瘤」的活藥物 <a class="tsl" href="#t-003645">說明會 36:45</a></h3>
+    <div class="flow c3">
+      <div><b>01 T 細胞</b><p>人體本來就有的免疫細胞，但面對自己身上長出來的腫瘤，通常沒有反應</p></div>
+      <div><b>02 裝上 CAR</b><p>給 T 細胞裝上一個「抗體導航」，讓它認得腫瘤表面特定的抗原（如 CD19、CD20、HER2）</p></div>
+      <div><b>03 辨識並殺傷</b><p>抗體與抗原結合後，T 細胞就會把腫瘤細胞殺掉。因為用的是活細胞，所以稱為「活藥物」；在血液腫瘤已展現很好的療效，公司提到甚至有人稱之為「治癒」 <a class="tsl" href="#t-003755">37:55</a></p></div>
+    </div>
+
+    <h3 class="ah"><i>A2</i>現行 CAR-T 的兩個瓶頸 <a class="tsl" href="#t-003835">說明會 38:35</a></h3>
+    <div class="stats">
+      <div class="stat"><b>2–3<small>週</small></b><span>單一病人的製備時間</span><p>抽血分離、裝 CAR、擴增、品管放行、冷凍運送、回輸，逐人製備，成本高 <a class="tsl" href="#t-003920">39:20</a></p></div>
+      <div class="stat"><b>&lt;10<small>%</small></b><span>已用上 CAR-T 的血液腫瘤占比</span><p>白血病、淋巴瘤等；公司說法為約略值 <a class="tsl" href="#t-003920">39:20</a></p></div>
+      <div class="stat"><b>~90<small>%</small></b><span>實體腫瘤仍是缺口</span><p>肝癌、乳癌、胰臟癌、肺癌等，目前尚難以 CAR-T 處理 <a class="tsl" href="#t-003920">39:20</a></p></div>
+    </div>
+
+    <h3 class="ah"><i>A3</i>In vivo CAR-T：把「製造工廠」搬進病人體內 <a class="tsl" href="#t-004040">說明會 40:40</a></h3>
+    <p class="ap">傳統作法要把細胞取出體外改造；in vivo 則是直接靜脈注射載體（公司稱為「工具包」），讓病人體內的 T 細胞就地變成 CAR-T。載體可以像抗體藥一樣大量生產、先備好庫存，病人來了直接給藥。</p>
+    <div class="lanes">
+      <div class="lane old">
+        <div class="lane-h"><b>體外製備（目前已上市作法）</b><span>約 2–3 週 · 逐人製備</span></div>
+        <ol><li>抽血、分離 T 細胞</li><li>體外裝 CAR、培養擴增</li><li>品管放行、冷凍運送</li><li>回輸病人</li></ol>
+      </div>
+      <div class="lane new">
+        <div class="lane-h"><b>In vivo（體內生成）</b><span>可預先量產 · 備貨供應</span></div>
+        <ol><li>靜脈注射載體（工具包）</li><li>體內 T 細胞被改造成 CAR-T</li><li>CAR-T 攻擊腫瘤</li></ol>
+      </div>
+    </div>
+    <p class="ap muted">公司說明會指出，近兩年的大型交易顯示 in vivo 在病人身上已能生成 CAR-T，並在血液腫瘤看到初步效果 <a class="tsl" href="#t-004145">41:45</a>。</p>
+
+    <h3 class="ah"><i>A4</i>產業已用資金表態：近兩年 in vivo CAR-T 交易 <span class="stag pub">公開資訊</span></h3>
+    <div class="table-wrap"><table class="data-table"><thead><tr><th>時間</th><th>買方 → 標的</th><th>公開報導金額</th><th>性質</th></tr></thead><tbody>
+      <tr><td>2025-03</td><td>AstraZeneca → EsoBiotec</td><td>簽約金 4.25 億美元＋里程碑最高 5.75 億美元，約 10 億美元</td><td>收購</td></tr>
+      <tr><td>2025-06</td><td>AbbVie → Capstan</td><td>最高 21 億美元（現金）</td><td>收購</td></tr>
+      <tr><td>2025-08</td><td>Gilead（Kite）→ Interius</td><td>3.5 億美元（現金）</td><td>收購</td></tr>
+      <tr><td>2025-10</td><td>Bristol Myers Squibb → Orbital</td><td>15 億美元</td><td>收購</td></tr>
+      <tr><td>2026-02</td><td>Eli Lilly → Orna</td><td>最高 24 億美元（含里程碑，簽約金未揭露）</td><td>收購</td></tr>
+      <tr><td>2026-04</td><td>Eli Lilly → Kelonia</td><td>簽約金 32.5 億美元、含里程碑最高 70 億美元</td><td>收購（目前最大一筆）</td></tr>
+      <tr><td>2026-07</td><td>Johnson &amp; Johnson → Sail Biomedicines</td><td>首期付款 7.85 億美元（含 4.65 億美元股權投資）；另有 25.8 億美元收購選擇權</td><td>合作＋收購選擇權</td></tr>
+    </tbody></table></div>
+    <p class="note">金額與交易結構依各公司公告及媒體報導彙整，各來源口徑略有差異，引用前請以原始公告為準。來源：<a href="https://www.biospectrumasia.com/news/26/27518/lilly-acquires-kelonia-therapeutics-for-7-b-to-advance-in-vivo-car-t-cell-therapies.html" target="_blank" rel="noopener">Lilly–Kelonia 報導</a>、<a href="https://www.jnj.com/media-center/press-releases/johnson-johnson-announces-collaboration-with-sail-biomedicines-to-advance-in-vivo-car-t-programs-and-transform-autoimmune-disease-through-immune-reset" target="_blank" rel="noopener">J&amp;J 新聞稿</a>、<a href="https://biocentury.com/article/658369/lilly-s-orna-deal-marks-fifth-takeout-of-an-in-vivo-car-t-play-in-two-years" target="_blank" rel="noopener">BioCentury：Lilly–Orna</a>，其餘為各公司新聞稿。說明會所稱「七個 B 的 deal」即指 Lilly–Kelonia <a class="tsl" href="#t-004145">41:45</a>。</p>
+
+    <h3 class="ah"><i>A5</i>下一關：實體腫瘤，以及 in vivo 特有的難題 <a class="tsl" href="#t-004235">說明會 42:35</a></h3>
+    <p class="ap">公司指出，in vivo 生成的 CAR-T 面對實體腫瘤時，最大的共同難題是<strong>擴增不足</strong>與 <strong>T 細胞耗竭</strong>：細胞數量長不起來，或活一陣子就失去功能。體外製備的 CAR-T 可以先在培養基裡養大再回輸，in vivo 沒有這個步驟，所以擴增與抗耗竭特別關鍵。這個缺口，就是公司引進 p40 armor 要處理的問題。</p>
+    <figure class="curve">
+      <svg viewBox="0 0 560 230" role="img" aria-label="概念示意：CAR-T 細胞數量隨時間變化">
+        <line x1="50" y1="195" x2="540" y2="195" class="ax"/><line x1="50" y1="20" x2="50" y2="195" class="ax"/>
+        <path d="M50 190 C 120 150, 150 60, 215 48 C 270 40, 300 120, 340 160 C 380 182, 450 188, 535 190" class="c-off" fill="none"/>
+        <path d="M50 190 C 120 140, 160 40, 230 28 C 310 18, 400 36, 535 50" class="c-on" fill="none"/>
+        <text x="540" y="62" text-anchor="end" class="lb on">加 armor：擴增更高、維持更久</text>
+        <text x="540" y="216" text-anchor="end" class="lb off">未加 armor：擴增有限、快速耗竭</text>
+        <text x="52" y="216" class="lb">時間 →</text>
+        <text x="14" y="110" transform="rotate(-90 14 110)" text-anchor="middle" class="lb">體內 CAR-T 細胞數量</text>
+      </svg>
+      <figcaption>概念示意圖，用以說明「擴增」與「耗竭」兩個問題，並非實測數據。</figcaption>
+    </figure>
+
+    <h3 class="ah"><i>A6</i>p40 armor 怎麼運作：只在「碰到腫瘤」時才補齊的訊號 <a class="tsl" href="#t-004440">說明會 44:40</a></h3>
+    <div class="flow c3">
+      <div><b>01 遇到腫瘤</b><p>CAR-T 碰到腫瘤抗原被活化後，自己會表現 p19。p19 單獨存在無法作用，公司形容是「半個月亮」</p></div>
+      <div><b>02 外補 p40</b><p>補上另一半 p40，兩者合成完整的 IL-23 細胞激素訊號</p></div>
+      <div><b>03 擴增、不耗竭</b><p>訊號作用在 CAR-T 自己身上，使其持續擴增，轉為有活性的記憶／效應 T 細胞</p></div>
+    </div>
+    <p class="ap"><strong>為什麼稱為「安全鎖」：</strong>沒有碰到腫瘤的 T 細胞不會產生 p19，補了 p40 也湊不成完整訊號，所以訊號只會出現在被活化的 CAR-T 上。</p>
+    <div class="table-wrap"><table class="data-table"><thead><tr><th>比較項目</th><th>IL-15／IL-18 等既有 armor</th><th>p40 armor（公司引進）</th></tr></thead><tbody>
+      <tr><td>使用現況</td><td>已被廣泛應用，臨床上已有證據：加入後 CAR-T 擴增與殺傷力更好 <a class="tsl" href="#t-004355">43:55</a></td><td>授權自北卡羅來納大學（UNC）教授的發明，公司指出已有大陸醫院在血液腫瘤上驗證其機制 <a class="tsl" href="#t-004545">45:45</a></td></tr>
+      <tr><td>主要顧慮</td><td>活化過強易引發免疫風暴（細胞激素釋放症候群），安全區間不易調整 <a class="tsl" href="#t-004355">43:55</a></td><td>只在 CAR-T 遇到腫瘤、產生 p19 時才形成完整訊號，屬選擇性設計 <a class="tsl" href="#t-004440">44:40</a></td></tr>
+      <tr><td>公司引用的比較</td><td colspan="2">胰臟癌（B7-H3 靶點）動物模型：IL-15／IL-18 組失去效果時，p40 組仍有效 <a class="tsl" href="#t-004545">45:45</a></td></tr>
+    </tbody></table></div>
+
+    <h3 class="ah"><i>A7</i>目前的證據在哪一層：說明會揭露了什麼、還沒有什麼</h3>
+    <div class="ladder">
+      <div class="rung done"><em>已揭露</em><b>動物模型</b><p>腦癌（神經母細胞瘤）小鼠：腫瘤復發時，一般 CAR-T 失效，加 p40 的 CAR-T 仍壓制腫瘤；胰臟癌模型優於 IL-15／IL-18。屬授權方教授的數據 <a class="tsl" href="#t-004500">45:00</a> <a class="tsl" href="#t-004545">45:45</a></p></div>
+      <div class="rung part"><em>公司口述</em><b>外部機制驗證</b><p>公司表示有大陸醫院已在血液腫瘤上驗證 p40 機制，網路上可查。說明會未提供出處與數據 <a class="tsl" href="#t-004545">45:45</a></p></div>
+      <div class="rung todo"><em>尚待取得</em><b>授權夥伴的人體臨床數據</b><p>公司明確表示動物數據做完後，仍需要臨床數據來證明 p40 的價值，並預期合作夥伴「很快」會有臨床線數據 <a class="tsl" href="#t-004800">48:00</a></p></div>
+      <div class="rung todo"><em>尚待取得</em><b>多靶點驗證，平台打包授權</b><p>以少數靶點的臨床結果建立平台價值，再整包授權給大型藥廠 <a class="tsl" href="#t-004800">48:00</a></p></div>
+    </div>
+    <p class="note">說明會中，順藥未揭露自家的 p40 人體臨床數據，也未揭露授權對象、金額與時程。</p>
+
+    <h3 class="ah"><i>A8</i>商業路徑：只賣「輪胎」，不造「車」 <a class="tsl" href="#t-004715">說明會 47:15</a></h3>
+    <p class="ap">公司坦言，自身的 CAR-T 開發能力不如已深耕十年的同業。總經理以「米其林輪胎」比喻：拿到一個很好的輪胎，不需要學會造整台車，而是找車廠合作。因此選擇把 p40 armor 的美國與歐美權利，按靶點分別授權給 CAR-T 開發商，不自建細胞製造。</p>
+    <div class="flow">
+      <div><b>01 取得 IP</b><p>2024–25 年向 UNC 取得授權；公司稱美國專利已於去年取得，另有歐洲專利 <a class="tsl" href="#t-004630">46:30</a></p></div>
+      <div><b>02 早期授權</b><p>授權給有臨床能力的 CAR-T 開發商，換取使用權與開發 know-how，雙方共享臨床數據 <a class="tsl" href="#t-004845">48:45</a></p></div>
+      <div><b>03 靶點驗證</b><p>在少數靶點（如肝癌、胰臟癌等）累積臨床證據，建立平台價值 <a class="tsl" href="#t-004800">48:00</a></p></div>
+      <div><b>04 整包授權</b><p>把所有靶點，乃至 in vivo 技術包裝起來，交給大型藥廠進一步開發 <a class="tsl" href="#t-004800">48:00</a></p></div>
+    </div>
+    <p class="ap">總經理以 Kelonia 被禮來收購為例，說明期望的終局型態 <a class="tsl" href="#t-004845">48:45</a>。公司同時表示，任何人要把 p40 armor 用在 CAR-T 並進入美國開發，都需要順藥的授權 <a class="tsl" href="#t-004630">46:30</a>。目前已有幾家公司正在積極洽談，說明會未揭露對象。</p>
+
+    <h3 class="ah"><i>A9</i>後續可追蹤的公開事項</h3>
+    <ul class="plain-list">
+      <li><p><strong>首筆 p40 授權是否簽署並公告</strong>：對象、授權範圍、金額揭露程度，以公司重大訊息為準。</p></li>
+      <li><p><strong>授權夥伴的臨床數據</strong>：選擇的靶點、試驗設計與結果是否公開。</p></li>
+      <li><p><strong>專利範圍與地區</strong>：美國專利的涵蓋範圍、歐洲專利的審查進度。</p></li>
+    </ul>
+    <p class="note">以上為依說明會內容整理的觀察清單，不代表任何時程承諾，也不構成投資建議。</p>
+  </section>
+
   <section class="block" id="lexicon">
     <h2>名詞釋義</h2>
-    <p class="sub">54 條術語與背景說明。可直接搜尋「207」「sICH」「armor」等關鍵字。</p>
+    <p class="sub">56 條術語與背景說明。可直接搜尋「207」「sICH」「armor」等關鍵字。</p>
 <div class="lex-tools">
       <label for="lex-q" style="font-size:12.5px;color:var(--muted)">搜尋</label>
       <input id="lex-q" type="search" placeholder="輸入術語、人名、試驗代號" autocomplete="off">
@@ -587,7 +754,7 @@ body[data-mode="deck"] .deck-hint{display:block;position:fixed;bottom:14px;right
     </div>
     <section class="lex-group" id="lex-0"><h3>藥品、試驗與藥證口徑</h3><div class="table-wrap"><table class="data-table"><thead><tr><th>名詞</th><th>說明</th></tr></thead><tbody><tr><td><strong>LT3001／3001</strong></td><td>順藥核心資產，全新小分子溶栓藥，開發十年</td></tr><tr><td><strong>LT1001</strong></td><td>長效止痛改良型新藥；台灣藥證換得東南亞、烏克蘭、印度、約旦</td></tr><tr><td><strong>202</strong></td><td>中國二期，297 人三臂（96／99／102），主要終點安全性</td></tr><tr><td><strong>205</strong></td><td>二期試驗（登記 89 人），mRS 0-2：60% vs 64%，結果為陰性。</td></tr><tr><td><strong>206</strong></td><td>台灣開放標籤單臂 10 人，主要終點 24 小時血管再通（AOL）；登記編號 NCT07890298</td></tr><tr><td><strong>207</strong></td><td>上藥主辦中國二期 300 人三臂（0.025／0.05／安慰劑），主要終點 mRS 0-1；登記編號 NCT07754825</td></tr><tr><td><strong>203 試驗</strong></td><td>取栓合併的先行試驗，作為第二張藥證二期的依據。ClinicalTrials.gov 上符合的登記為 NCT05198323（Two-Part、66 人、2022-08 起）；經濟日報 2026-11-13 亦報導 203 試驗 Part A 已完成並展現良好安全性。編號對應尚待公司確認。</td></tr><tr><td><strong>301</strong></td><td>中國 Phase 2/3（二階三）取證試驗。截至 2026-11-13，ClinicalTrials.gov 以 LT3001 查得 7 筆登記，尚無 Phase 3</td></tr><tr><td><strong>302</strong></td><td>美國第二個三期；「301 做成什麼樣的時候加 302，美國這張證要給我們」。截至 2026-11-13，登記資料尚無 Phase 3／302 紀錄</td></tr><tr><td><strong>二階三／二接三</strong></td><td>同一件事的兩種講法：CDE 建議的最快取證路徑（Phase 2/3 seamless）</td></tr><tr><td><strong>enrichment（富集）</strong></td><td>只收二期裡療效最好的那群（中重度、手腳或語言受損、前循環責任血管顯著狹窄）</td></tr><tr><td><strong>placebo rate</strong></td><td>輕症安慰劑組 80% 會自癒，限縮到中重度降到 60%，才有 20% 差距可驗</td></tr><tr><td><strong>mRS 0-1 主要／0-2 關鍵次要</strong></td><td>CDE 重視 0-2；FDA 連 shift 都算黃金終點</td></tr><tr><td><strong>MRCT</strong></td><td>多區域臨床試驗；美國取證看中國三期與含美國 MRCT 兩套數據是否一致</td></tr><tr><td><strong>超窗中風</strong></td><td>24 小時內不取栓、不打 tPA 的病人＝第一張藥證族群</td></tr><tr><td><strong>第二張藥證（取栓合併）</strong></td><td>取栓後 2 小時 muscle power＋影像判定 recovery 不佳者入組，明年啟動二期（公司口述）</td></tr><tr><td><strong>AOL</strong></td><td>Arterial Occlusion Lysis，血管阻塞再通評估，206 主要終點</td></tr><tr><td><strong>M2</strong></td><td>中大腦動脈 M2 段；206 第一例給藥前 100% 阻塞、7 天後 100% 打通</td></tr><tr><td><strong>muscle power</strong></td><td>肌力分級；取栓後約 2 小時的初步 recovery 判定</td></tr><tr><td><strong>reperfusion deficit／遠端栓塞／內皮損傷</strong></td><td>取栓後逾 50% 病人三個月仍非 mRS 0-2 的三個機制解釋</td></tr><tr><td><strong>前循環／責任血管顯著狹窄</strong></td><td>207 納入條件，用以排除小血管與會自癒的中風</td></tr><tr><td><strong>30 家中心／28 家倫理／19 家啟動</strong></td><td>上藥 207 執行進度；公司稱 11 月結束 30 家全開，啟動不到兩週入組 2 人（公司口述）</td></tr></tbody></table></div></section>
     <section class="lex-group" id="lex-1"><h3>交易與報價</h3><div class="table-wrap"><table class="data-table"><thead><tr><th>名詞</th><th>說明</th></tr></thead><tbody><tr><td><strong>日本報價</strong></td><td>2025 年（中國 300 人結果剛出）日本公司提議拿日本市場：約 <strong>1,000 萬美元 upfront</strong>、<strong>接近 1 億美元 total deal size</strong>；順藥未接受，理由是要全球整包（公司口述，未見合約或重訊）</td></tr><tr><td><strong>印度報價</strong></td><td>近期印度公司提案，條件「跟日本差不多」；對方要在印度自做三期、自行銷售（公司口述）</td></tr><tr><td><strong>條件式授權</strong></td><td>先授權、把臨床條件與合約履行綁進審查權</td></tr><tr><td><strong>total deal size／upfront</strong></td><td>整包金額（含里程碑與分潤）／簽約金</td></tr><tr><td><strong>recognition／「上看一個 B」</strong></td><td>市場報價被視為價值認可；「一個 B」＝10 億美元級的全球授權規模想像</td></tr></tbody></table></div></section>
-    <section class="lex-group" id="lex-2"><h3>CAR-T armor 平台</h3><div class="table-wrap"><table class="data-table"><thead><tr><th>名詞</th><th>說明</th></tr></thead><tbody><tr><td><strong>armor</strong></td><td>CAR-T 的「裝甲」：額外給 T 細胞一個強化訊號，讓它長得多、活得久、不耗竭</td></tr><tr><td><strong>p40／p19（IL-23）</strong></td><td>設計邏輯：CAR-T 碰到腫瘤自己表現 p19（半個月亮），再補 p40，二合一才是完整 cytokine；只有遇腫瘤才作用，故毒性可控</td></tr><tr><td><strong>UNC／北卡</strong></td><td>美國北卡大學教堂山分校教授的發明；順藥 2024-25 取得授權，<strong>美國專利 2025 取得</strong></td></tr><tr><td><strong>第四代 CAR-T</strong></td><td>加 armor 的世代定義</td></tr><tr><td><strong>IL-15／IL-18</strong></td><td>已在用的細胞激素型 armor，毒性（免疫風暴）難控</td></tr><tr><td><strong>免疫風暴（CRS）</strong></td><td>cytokine release syndrome，活化過強 CAR-T 的最大毒性</td></tr><tr><td><strong>神經母細胞瘤／腦癌模型</strong></td><td>p40 加上去後腫瘤復發仍被壓制</td></tr><tr><td><strong>B7-H3／胰臟癌</strong></td><td>p40 在 solid tumor 模型勝過 IL-15／IL-18</td></tr><tr><td><strong>solid／liquid tumor</strong></td><td>實體瘤／血液瘤；血液瘤不到 10%，實體瘤佔約 90%</td></tr><tr><td><strong>memory effector T cell</strong></td><td>具記憶與效應功能的 T 細胞</td></tr><tr><td><strong>in vivo CAR-T</strong></td><td>不抽出細胞，直接靜脈打載體，在體內生成 CAR-T</td></tr><tr><td><strong>米其林輪胎比喻</strong></td><td>「拿到好輪胎但不會造車」→ 只授權 IP，不自建 CAR-T 能力</td></tr><tr><td><strong>Kelonia／禮來（Lilly）</strong></td><td>「授權給 CAR-T 開發商、最後由大廠整包收購」的模式舉例：Kelonia 先前分別與 J&amp;J（2025-11）、Astellas Xyphos（2024）合作，2026-04-20 由禮來收購<br><span class="src">來源：Lilly 新聞稿、CNBC、FierceBiotech、Nature Reviews Drug Discovery 2026-04-27</span></td></tr><tr><td><strong>「七個 B 的 deal」</strong></td><td>即上一筆：禮來收購 Kelonia，簽約金 32.5 億美元、含里程碑總額上看 70 億美元，為 in vivo CAR-T 至今最大交易。</td></tr></tbody></table></div></section>
+    <section class="lex-group" id="lex-2"><h3>CAR-T armor 平台</h3><div class="table-wrap"><table class="data-table"><thead><tr><th>名詞</th><th>說明</th></tr></thead><tbody><tr><td><strong>CAR-T</strong></td><td>嵌合抗原受體 T 細胞療法：給 T 細胞裝上辨識腫瘤抗原的 CAR，使其攻擊腫瘤。詳見 <a href="#appx-invivo">附錄 A</a></td></tr><tr><td><strong>體外製備（ex vivo）</strong></td><td>目前已上市 CAR-T 的作法：抽出病人 T 細胞，在體外改造、擴增後回輸，約需 2–3 週、逐人製備</td></tr><tr><td><strong>armor</strong></td><td>CAR-T 的「裝甲」：額外給 T 細胞一個強化訊號，讓它長得多、活得久、不耗竭</td></tr><tr><td><strong>p40／p19（IL-23）</strong></td><td>設計邏輯：CAR-T 碰到腫瘤自己表現 p19（半個月亮），再補 p40，二合一才是完整 cytokine；只有遇腫瘤才作用，故毒性可控</td></tr><tr><td><strong>UNC／北卡</strong></td><td>美國北卡大學教堂山分校教授的發明；順藥 2024-25 取得授權，<strong>美國專利 2025 取得</strong></td></tr><tr><td><strong>第四代 CAR-T</strong></td><td>加 armor 的世代定義</td></tr><tr><td><strong>IL-15／IL-18</strong></td><td>已在用的細胞激素型 armor，毒性（免疫風暴）難控</td></tr><tr><td><strong>免疫風暴（CRS）</strong></td><td>cytokine release syndrome，活化過強 CAR-T 的最大毒性</td></tr><tr><td><strong>神經母細胞瘤／腦癌模型</strong></td><td>p40 加上去後腫瘤復發仍被壓制</td></tr><tr><td><strong>B7-H3／胰臟癌</strong></td><td>p40 在 solid tumor 模型勝過 IL-15／IL-18</td></tr><tr><td><strong>solid／liquid tumor</strong></td><td>實體瘤／血液瘤；血液瘤不到 10%，實體瘤佔約 90%</td></tr><tr><td><strong>memory effector T cell</strong></td><td>具記憶與效應功能的 T 細胞</td></tr><tr><td><strong>in vivo CAR-T</strong></td><td>不抽出細胞，直接靜脈打載體，在體內生成 CAR-T</td></tr><tr><td><strong>米其林輪胎比喻</strong></td><td>「拿到好輪胎但不會造車」→ 只授權 IP，不自建 CAR-T 能力</td></tr><tr><td><strong>Kelonia／禮來（Lilly）</strong></td><td>「授權給 CAR-T 開發商、最後由大廠整包收購」的模式舉例：Kelonia 先前分別與 J&amp;J（2025-11）、Astellas Xyphos（2024）合作，2026-04-20 由禮來收購<br><span class="src">來源：Lilly 新聞稿、CNBC、FierceBiotech、Nature Reviews Drug Discovery 2026-04-27</span></td></tr><tr><td><strong>「七個 B 的 deal」</strong></td><td>即上一筆：禮來收購 Kelonia，簽約金 32.5 億美元、含里程碑總額上看 70 億美元，為 in vivo CAR-T 至今最大交易。</td></tr></tbody></table></div></section>
     <section class="lex-group" id="lex-3"><h3>CRISPR 平台</h3><div class="table-wrap"><table class="data-table"><thead><tr><th>名詞</th><th>說明</th></tr></thead><tbody><tr><td><strong>引正基因（GenEditBio）</strong></td><td>香港基因編輯公司；順藥持股約 2.86%，晟德 2026-07 加碼</td></tr><tr><td><strong>大範圍插入／變更</strong></td><td>不只基因剔除或鹼基編輯（base editing），可做大片段插入／替換</td></tr><tr><td><strong>非腺病毒遞送載體</strong></td><td>引正自研的腦部遞送載體，避開腺病毒毒性</td></tr><tr><td><strong>靶點篩選（明年）</strong></td><td>今年合作、明年取得初步靶點與動物數據，再談早期授權（公司口述）</td></tr><tr><td><strong>CNS</strong></td><td>中樞神經系統，順藥主戰場</td></tr></tbody></table></div></section>
     <section class="lex-group" id="lex-4"><h3>公司、機構與人物</h3><div class="table-wrap"><table class="data-table"><thead><tr><th>名詞</th><th>說明</th></tr></thead><tbody><tr><td><strong>順藥／順天醫藥生技（Lumosa）</strong></td><td>6535.TWO</td></tr><tr><td><strong>上藥</strong></td><td>上海醫藥集團，207 出資與執行方，順藥不在 sponsor 欄</td></tr><tr><td><strong>晟德</strong></td><td>晟德大藥廠（4123），順藥母公司</td></tr><tr><td><strong>CDE</strong></td><td>中國藥品審評中心，管臨床設計與藥證</td></tr><tr><td><strong>FDA／NDA</strong></td><td>美國法規單位／新藥查驗登記</td></tr><tr><td><strong>IRB（倫理）</strong></td><td>人體研究倫理審查委員會，收案前置</td></tr><tr><td><strong>葉聖文（總經理）</strong></td><td>本場主講人<br><span class="src">來源：順藥官網「經營團隊」頁載「葉聖文博士　總經理」，專長分子生物學、毒理學</span></td></tr><tr><td><strong>黑石財經「戰略臺灣投資論壇」</strong></td><td>主辦單位與正式名稱：黑石財經舉辦之法人說明會「戰略臺灣投資論壇」；2026-11-13 15:00，台北市信義區信義路5段7號88樓。來源：順藥 2026-11-02 公開資訊觀測站公告。</td></tr></tbody></table></div></section>
   </section>
@@ -723,7 +890,7 @@ body[data-mode="deck"] .deck-hint{display:block;position:fixed;bottom:14px;right
     if(!(k in seen))seen[k]=pal[n++%pal.length]; t.style.setProperty('--c',seen[k]);
   });
   [].slice.call(document.querySelectorAll('.stat b')).forEach(function(b){
-    var to=parseInt(b.textContent,10); if(isNaN(to))return; b.textContent='0';
+    var to=parseInt(b.textContent,10); if(!/^\d+$/.test(b.textContent.trim()))return; b.textContent='0';
     var cio=new IntersectionObserver(function(es){es.forEach(function(e){
       if(!e.isIntersecting)return; cio.disconnect(); var t0=performance.now();
       (function step(t){var p=Math.min(1,(t-t0)/1100), v=Math.round(to*(1-Math.pow(1-p,3)));
