@@ -430,6 +430,18 @@ figure.curve path{stroke-dasharray:900;stroke-dashoffset:0;transition:stroke-das
 .rung b{font-size:15px;font-weight:700}
 .rung p{margin:0;font-size:13.5px;color:var(--ink-2);line-height:1.75}
 .rung.todo{border-style:dashed}
+/* primer */
+.primer{margin:6px 0 10px}
+.primer-lead{margin:0 0 18px;padding:22px 26px;border-radius:var(--r);font-size:16.5px;line-height:1.85;color:var(--ink-2);
+  background:linear-gradient(135deg,var(--accent-soft),var(--gold-soft));border:1px solid var(--line-soft)}
+.primer-lead strong{color:var(--ink);font-family:var(--serif);font-weight:800}
+.primer-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.pc{padding:20px 22px 18px;border-radius:var(--r);background:var(--panel);border:1px solid var(--line-soft);box-shadow:var(--shadow);transition:transform .25s,border-color .25s}
+.pc:hover{transform:translateY(-3px);border-color:color-mix(in srgb,var(--accent) 40%,transparent)}
+.pc.wide{grid-column:1/-1;border-left:4px solid var(--gold)}
+.pc h4{margin:0 0 10px;font-family:var(--mono);font-size:11.5px;font-weight:600;letter-spacing:.08em;color:var(--accent)}
+.pc p{margin:0;font-size:14.5px;line-height:1.85;color:var(--ink-2)}
+.pc p strong{color:var(--ink);background:linear-gradient(transparent 62%,var(--gold-soft) 62%)}
 
 /* ---- responsive ---- */
 @media (max-width:1024px){
@@ -462,6 +474,8 @@ figure.curve path{stroke-dasharray:900;stroke-dashoffset:0;transition:stroke-das
   .flow{grid-template-columns:1fr}
   .rung{grid-template-columns:1fr;padding:16px 16px 16px 20px}
   .rung em{grid-row:auto;justify-self:start;padding:2px 12px}
+  .primer-grid{grid-template-columns:1fr}
+  .primer-lead{padding:18px 18px;font-size:15.5px}
   .lane li{margin-right:0}
   .lane li::after{display:none}
   .appendix h3.ah{margin-top:44px}
@@ -647,6 +661,17 @@ figure.curve path{stroke-dasharray:900;stroke-dashoffset:0;transition:stroke-das
     <section class="block appendix" id="appx-invivo">
     <h2>In vivo CAR-T 與 p40 armor：從概念到商業路徑</h2>
     <p class="sub">本附錄補充說明會中講得較簡略的部分。標示 <span class="stag mtg">說明會</span> 的內容整理自葉聖文總經理的說明，附時間碼可點回逐字稿；標示 <span class="stag pub">公開資訊</span> 的內容來自產業公開報導，附來源連結；A7 中標示「簡報外說明」者，為公司在說明會之外對投資人的說明，並非公開文件。</p>
+
+    <div class="primer">
+      <p class="primer-lead"><strong>先用白話講結論：CAR-T 是一種全新的抗癌機制，而 in vivo（體內生成）CAR-T 是近兩年生技界投資與授權最火熱的方向之一。</strong>下面先把幾個名詞講清楚，後面的小節再逐項展開。</p>
+      <div class="primer-grid">
+        <div class="pc"><h4>01 · 腫瘤＝癌</h4><p><strong>惡性腫瘤就是一般所說的癌。</strong>傳統治療靠手術、化療、放療或標靶藥；CAR-T 走的是另一條路：<strong>讓病人自己的免疫系統去殺癌</strong>。</p></div>
+        <div class="pc"><h4>02 · T 細胞、CAR 與 CAR-T</h4><p><strong>T 細胞</strong>是免疫系統裡負責殺傷的細胞；<strong>CAR（嵌合抗原受體）</strong>是裝在 T 細胞表面的「辨識導航」，讓它認得癌細胞。兩者合在一起就是 <strong>CAR-T</strong>。因為用的是活細胞，所以又稱<strong>「活藥物」</strong>。</p></div>
+        <div class="pc"><h4>03 · in vivo ＝ 在體內</h4><p><strong>in vivo 是拉丁文，意思是「在活體內」</strong>；相反的 <strong>ex vivo 是「在體外」</strong>。傳統 CAR-T 屬於 ex vivo：抽血、在工廠改造、再打回病人，約需 2–3 週。<strong>in vivo CAR-T 則是直接打一針，把改造工具送進體內，讓 T 細胞就地變成 CAR-T</strong>，省掉工廠與等待。</p></div>
+        <div class="pc"><h4>04 · 為什麼這麼火熱</h4><p><strong>因為它有機會讓 CAR-T 變得更快、更便宜、讓更多病人用得到。</strong>所以大藥廠近兩年接連出手：下方 A4 列出 7 筆交易，<strong>最大一筆（禮來收購 Kelonia）含里程碑總額上看 70 億美元</strong>。</p></div>
+        <div class="pc wide"><h4>05 · 順藥在這個故事裡的位置</h4><p><strong>順藥不是自己做 CAR-T 細胞，而是持有一項「強化裝備」p40 armor 的授權權利</strong>，目的是讓 CAR-T 在肝癌、胰臟癌這類實體腫瘤裡撐得更久、不容易耗竭。公司的路線是把這項技術<strong>授權給有臨床能力的 CAR-T 開發商</strong>，而不是自己造車（詳見 A6、A8）。</p></div>
+      </div>
+    </div>
 
     <h3 class="ah"><i>A1</i>先理解 CAR-T：把免疫細胞改造成「會認腫瘤」的活藥物 <a class="tsl" href="#t-003645">說明會 36:45</a></h3>
     <div class="flow c3">
