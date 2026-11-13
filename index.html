@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>順藥 6535 · 2026-11-13 黑石論壇法說會</title>
+<script>document.documentElement.classList.add("js")</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700;900&display=swap" rel="stylesheet">
+<style>
+/* ============ 順藥 6535 · 閱讀頁 v2 — 編輯式研究報告視覺 ============ */
+:root{
+  --paper:#f4f0e7; --paper-2:#ece6d9; --panel:#fffcf5; --panel-2:#faf5ea;
+  --ink:#121a19; --ink-2:#38423f; --muted:#737b76;
+  --line:rgba(18,26,25,.13); --line-soft:rgba(18,26,25,.07);
+  --accent:#0a6b5e; --accent-2:#10907f; --accent-ink:#f2fbf9; --accent-soft:rgba(10,107,94,.10);
+  --gold:#a9772a; --gold-soft:rgba(169,119,42,.13);
+  --warn:#b4531a; --warn-soft:rgba(180,83,26,.11);
+  --grad:linear-gradient(90deg,#0a6b5e,#2aa795 45%,#c9963f);
+  --shadow:0 1px 0 rgba(255,255,255,.7) inset,0 10px 30px -14px rgba(40,34,18,.22),0 2px 6px -2px rgba(40,34,18,.08);
+  --shadow-lg:0 24px 60px -24px rgba(30,26,12,.35);
+  --max:1200px; --rail:216px; --r:18px;
+  --mono:"JetBrains Mono",ui-monospace,"SF Mono","Cascadia Mono",Menlo,monospace;
+  --sans:"Noto Sans TC","Inter","Segoe UI",system-ui,-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif;
+  --serif:"Noto Serif TC","Source Han Serif TC","Songti TC","Iowan Old Style","Georgia",serif;
+  --num:"Instrument Serif","Noto Serif TC",Georgia,serif;
+}
+html[data-theme="dark"]{
+  --paper:#060c0b; --paper-2:#0a1312; --panel:#0e1817; --panel-2:#121f1d;
+  --ink:#ece8dc; --ink-2:#c4c8c1; --muted:#87918d;
+  --line:rgba(236,232,220,.16); --line-soft:rgba(236,232,220,.07);
+  --accent:#52d3bf; --accent-2:#7be3d1; --accent-ink:#03201c; --accent-soft:rgba(82,211,191,.12);
+  --gold:#e6b866; --gold-soft:rgba(230,184,102,.14);
+  --warn:#f2a465; --warn-soft:rgba(242,164,101,.13);
+  --grad:linear-gradient(90deg,#52d3bf,#8fe3c9 45%,#e6b866);
+  --shadow:0 1px 0 rgba(255,255,255,.04) inset,0 14px 34px -16px rgba(0,0,0,.7);
+  --shadow-lg:0 30px 70px -26px rgba(0,0,0,.9);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+html,body{max-width:100%;overflow-x:clip}
+body{margin:0;color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.8;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+  background:
+    radial-gradient(1200px 520px at 85% -8%,color-mix(in srgb,var(--accent) 12%,transparent),transparent 70%),
+    radial-gradient(900px 480px at -5% 18%,color-mix(in srgb,var(--gold) 10%,transparent),transparent 70%),
+    var(--paper);
+  background-attachment:fixed}
+::selection{background:var(--accent);color:var(--accent-ink)}
+a{color:var(--accent);text-decoration:none;transition:color .15s}
+a:hover{text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+code{font-family:var(--mono);font-size:.84em;background:var(--accent-soft);color:var(--accent);padding:.15em .5em;border-radius:6px}
+h1,h2,h3{line-height:1.3;margin:0}
+b,strong{font-weight:650}
+::-webkit-scrollbar{width:10px;height:10px}
+::-webkit-scrollbar-thumb{background:var(--line);border-radius:10px;border:2px solid transparent;background-clip:padding-box}
+::-webkit-scrollbar-thumb:hover{background:var(--muted);background-clip:padding-box;border:2px solid transparent}
+
+/* ---- progress ---- */
+.progress{position:fixed;left:0;top:0;height:3px;width:100%;z-index:60;transform-origin:0 50%;
+  transform:scaleX(0);background:var(--grad);box-shadow:0 0 14px color-mix(in srgb,var(--accent) 70%,transparent)}
+
+/* ---- top bar ---- */
+.topbar{position:sticky;top:0;z-index:40;height:58px;display:grid;grid-template-columns:1fr auto;
+  align-items:center;gap:16px;padding:0 24px;
+  background:color-mix(in srgb,var(--paper) 72%,transparent);
+  -webkit-backdrop-filter:saturate(1.6) blur(18px);backdrop-filter:saturate(1.6) blur(18px);
+  border-bottom:1px solid var(--line-soft)}
+.brand{display:flex;align-items:center;gap:12px;min-width:0}
+.brand::before{content:"";flex:none;width:22px;height:22px;border-radius:7px;
+  background:conic-gradient(from 210deg,#0a6b5e,#2aa795,#e6b866,#0a6b5e);
+  box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 16%,transparent),0 4px 14px -4px color-mix(in srgb,var(--accent) 60%,transparent)}
+.brand b{font-family:var(--serif);font-size:16px;font-weight:700;letter-spacing:.04em}
+.brand span{color:var(--muted);font-size:12.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+  padding-left:12px;border-left:1px solid var(--line)}
+.tools{display:flex;align-items:center;gap:8px}
+.btn{border:1px solid var(--line);background:color-mix(in srgb,var(--panel) 70%,transparent);color:var(--ink-2);
+  font:inherit;font-size:12.5px;font-weight:500;padding:7px 14px;cursor:pointer;border-radius:999px;
+  transition:all .18s ease}
+.btn:hover{background:var(--accent-soft);border-color:var(--accent);color:var(--accent);transform:translateY(-1px)}
+.btn:active{transform:translateY(0)}
+.btn[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+
+/* ---- shell ---- */
+.shell{max-width:var(--max);margin:0 auto;padding:0 24px}
+.layout{display:grid;grid-template-columns:var(--rail) minmax(0,1fr);gap:48px;align-items:start}
+nav.rail{position:sticky;top:78px;padding:26px 0 60px;max-height:calc(100dvh - 78px);overflow:auto;
+  counter-reset:rn;scrollbar-width:none}
+nav.rail::-webkit-scrollbar{display:none}
+nav.rail::before{content:"CONTENTS";display:block;font-family:var(--mono);font-size:10.5px;letter-spacing:.24em;
+  color:var(--gold);margin:0 0 14px 14px}
+nav.rail a{counter-increment:rn;position:relative;display:flex;gap:10px;align-items:baseline;
+  padding:6px 10px 6px 14px;font-size:13.5px;color:var(--muted);border-radius:10px;
+  transition:color .15s,background .15s}
+nav.rail a::before{content:counter(rn,decimal-leading-zero);font-family:var(--mono);font-size:10px;opacity:.55;
+  transition:opacity .15s,color .15s}
+nav.rail a:hover{color:var(--ink);text-decoration:none;background:var(--line-soft)}
+nav.rail a.active{color:var(--accent);background:var(--accent-soft);font-weight:600}
+nav.rail a.active::before{opacity:1;color:var(--gold)}
+nav.rail a.active::after{content:"";position:absolute;left:0;top:20%;bottom:20%;width:3px;border-radius:3px;background:var(--grad)}
+main{padding:26px 0 140px;min-width:0;counter-reset:sec}
+
+/* ---- hero (cover) ---- */
+.hero{position:relative;isolation:isolate;overflow:hidden;display:grid;
+  grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);gap:36px;align-items:center;
+  padding:56px 44px 52px;margin:6px 0 10px;border-radius:30px;color:#eef3f0;
+  background:#06100e;box-shadow:var(--shadow-lg),0 0 0 1px rgba(255,255,255,.07) inset}
+.hero::before{content:"";position:absolute;inset:-30%;z-index:-2;
+  background:
+    radial-gradient(38% 42% at 18% 28%,rgba(34,190,165,.55),transparent 70%),
+    radial-gradient(34% 40% at 84% 20%,rgba(214,160,72,.42),transparent 70%),
+    radial-gradient(40% 46% at 70% 90%,rgba(72,104,235,.38),transparent 70%),
+    radial-gradient(30% 34% at 8% 94%,rgba(24,140,120,.40),transparent 70%);
+  filter:blur(26px);animation:drift 22s ease-in-out infinite alternate}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;opacity:.32;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .55 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+@keyframes drift{from{transform:translate3d(-3%,-2%,0) rotate(0deg) scale(1)}to{transform:translate3d(4%,3%,0) rotate(8deg) scale(1.12)}}
+.kicker{display:flex;flex-wrap:wrap;align-items:center;gap:10px;font-size:12.5px;color:rgba(238,243,240,.7);letter-spacing:.04em}
+.kicker .pill{font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;color:#f3d49a;
+  padding:4px 11px;border-radius:999px;border:1px solid rgba(243,212,154,.4);background:rgba(243,212,154,.08)}
+.hero h1{font-family:var(--serif);font-size:clamp(28px,3.3vw,44px);margin:20px 0 20px;font-weight:800;white-space:nowrap;
+  letter-spacing:-.015em;line-height:1.2;text-wrap:balance}
+.hero h1 em{font-style:normal;background:linear-gradient(100deg,#7ff0d8 5%,#f6d28d 95%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;padding-right:.05em}
+.hero p.lede{color:rgba(238,243,240,.76);font-size:16px;max-width:36ch;margin:0 0 26px;line-height:1.85}
+.meta-strip{display:flex;flex-wrap:wrap;gap:8px}
+.meta-strip span{font-size:12px;color:rgba(238,243,240,.82);padding:5px 12px;border-radius:999px;
+  background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.keygrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.key{position:relative;padding:20px 18px 18px;border-radius:20px;
+  background:linear-gradient(160deg,rgba(255,255,255,.11),rgba(255,255,255,.03));
+  border:1px solid rgba(255,255,255,.14);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);
+  box-shadow:0 10px 30px -12px rgba(0,0,0,.5);transition:transform .25s ease,border-color .25s,box-shadow .25s}
+.key:hover{transform:translateY(-4px);border-color:rgba(127,240,216,.5);box-shadow:0 18px 40px -14px rgba(0,0,0,.6),0 0 0 1px rgba(127,240,216,.18)}
+.key .kl{display:block;font-family:var(--mono);font-size:10.5px;color:rgba(238,243,240,.6);letter-spacing:.14em;text-transform:uppercase}
+.key b{display:block;font-family:var(--num);font-weight:400;font-size:clamp(34px,3.8vw,50px);line-height:1.05;
+  margin:10px 0 6px;letter-spacing:-.01em;color:#fff;white-space:nowrap}
+.key b i{font-family:var(--sans);font-style:normal;font-size:.3em;color:rgba(238,243,240,.6);font-weight:500;margin-left:4px;letter-spacing:.04em}
+.key p{margin:0;font-size:12.5px;color:rgba(238,243,240,.74);line-height:1.6}
+.key.alert{border-color:rgba(246,170,100,.5);background:linear-gradient(160deg,rgba(246,170,100,.20),rgba(246,170,100,.04))}
+.key.alert b{color:#ffc58c;font-family:var(--serif);font-weight:800;font-size:clamp(26px,2.8vw,36px);padding:5px 0 3px}
+.key.alert .kl{color:#ffc58c}
+.key.alert::after{content:"";position:absolute;top:16px;right:16px;width:8px;height:8px;border-radius:50%;
+  background:#ffb067;box-shadow:0 0 0 0 rgba(255,176,103,.6);animation:ping 2.2s ease-out infinite}
+@keyframes ping{to{box-shadow:0 0 0 12px rgba(255,176,103,0)}}
+
+/* ---- sections ---- */
+section.block{counter-increment:sec;padding:76px 0 64px;border-bottom:1px solid var(--line-soft);position:relative}
+section.block:last-of-type{border-bottom:0}
+section.block > h2{font-family:var(--serif);font-size:clamp(25px,3vw,36px);font-weight:800;letter-spacing:-.01em;
+  margin-bottom:10px;text-wrap:balance}
+section.block > h2::before{content:"§ " counter(sec,decimal-leading-zero);display:flex;align-items:center;gap:14px;
+  font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.24em;color:var(--gold);margin-bottom:14px}
+section.block > h2::after{content:"";display:block;width:56px;height:3px;border-radius:3px;background:var(--grad);margin-top:16px}
+section.block > .sub{color:var(--muted);font-size:14.5px;margin:0 0 30px;max-width:64ch;line-height:1.85}
+
+/* lists */
+.lead-list{list-style:none;counter-reset:h;padding:0;margin:0;display:grid;gap:14px}
+.lead-list li{counter-increment:h;display:grid;grid-template-columns:64px 1fr;gap:18px;align-items:start;
+  padding:22px 26px 22px 20px;border-radius:var(--r);background:var(--panel);border:1px solid var(--line-soft);
+  box-shadow:var(--shadow);transition:transform .25s ease,border-color .25s,box-shadow .25s}
+.lead-list li:hover{transform:translateX(4px);border-color:color-mix(in srgb,var(--accent) 45%,transparent)}
+.lead-list li::before{content:counter(h,decimal-leading-zero);font-family:var(--num);font-size:46px;line-height:.9;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;text-align:center}
+.lead-list li>p{margin:0;color:var(--ink-2);max-width:72ch;min-width:0;font-size:15.5px}
+.lead-list p b,.lead-list p strong{color:var(--ink);background:linear-gradient(transparent 62%,var(--gold-soft) 62%)}
+.plain-list{list-style:none;padding:0;margin:0}
+.plain-list li{padding:20px 24px;border-radius:var(--r);background:var(--panel);border:1px solid var(--line-soft);
+  box-shadow:var(--shadow);border-left:3px solid var(--accent)}
+.plain-list li>p{margin:0;color:var(--ink-2);max-width:76ch}
+.plain-list li strong{color:var(--ink)}
+
+/* ---- bars ---- */
+.bars{margin:6px 0 0;padding:10px 26px;border-radius:var(--r);background:var(--panel);border:1px solid var(--line-soft);box-shadow:var(--shadow)}
+.bar-row{display:grid;grid-template-columns:170px 1fr 84px 190px;gap:18px;align-items:center;padding:16px 0;
+  border-top:1px solid var(--line-soft)}
+.bar-row:first-child{border-top:0}
+.bar-label b{font-family:var(--num);font-size:28px;font-weight:400;display:block;line-height:1;margin-bottom:3px}
+.bar-label span{font-size:12px;color:var(--muted)}
+.bar-track{height:12px;background:var(--line-soft);border-radius:99px;position:relative;overflow:hidden}
+.bar-track i{display:block;height:100%;border-radius:99px;transform-origin:0 50%;
+  background:linear-gradient(90deg,var(--accent),var(--accent-2));box-shadow:0 0 16px -2px color-mix(in srgb,var(--accent) 60%,transparent);
+  transition:transform 1.3s cubic-bezier(.2,.8,.2,1) .15s}
+.bar-row[data-status="gap"] .bar-track i{background:linear-gradient(90deg,var(--warn),#e0a15e);box-shadow:0 0 16px -2px color-mix(in srgb,var(--warn) 60%,transparent)}
+.bar-row[data-status="done"] .bar-track i{opacity:.72}
+.bar-num{font-family:var(--num);font-size:30px;text-align:right;line-height:1}
+.bar-num span{font-family:var(--sans);font-size:11.5px;color:var(--muted);margin-left:3px}
+.bar-ep{font-size:12.5px;color:var(--ink-2);line-height:1.5}
+.bar-ep span{font-family:var(--mono);font-size:10.5px;color:var(--muted)}
+.rv:not(.in) .bar-track i{transform:scaleX(0)}
+
+/* ---- timeline ---- */
+.tl{--lab:98px;position:relative;margin:10px 0 6px;padding:40px 24px 34px 0;border-radius:var(--r);
+  background:var(--panel);border:1px solid var(--line-soft);box-shadow:var(--shadow)}
+.tl::before{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none}
+.tl-tick,.tl-now{position:absolute;left:calc(var(--lab) + 18px + (100% - var(--lab) - 42px) * var(--x))}
+.tl-tick{top:12px;transform:translateX(-50%);font-family:var(--mono);font-size:10.5px;color:var(--muted)}
+.tl-tick i{font-style:normal}
+.tl-tick::after{content:"";position:absolute;left:50%;top:22px;width:1px;height:228px;
+  background:repeating-linear-gradient(var(--line) 0 3px,transparent 3px 7px);opacity:.7}
+.tl-now{top:12px;bottom:22px;width:0;z-index:3;transform:none}
+.tl-now::before{content:"";position:absolute;left:-1px;top:6px;bottom:0;width:2px;border-radius:2px;
+  background:linear-gradient(transparent,var(--gold) 20%)}
+.tl-now::after{content:"今日 11/13";position:absolute;bottom:-12px;left:50%;transform:translateX(-50%);white-space:nowrap;
+  font-family:var(--mono);font-size:10px;letter-spacing:.04em;color:#201505;background:var(--gold);
+  padding:2px 8px;border-radius:99px;font-weight:600}
+.tl-row{position:relative;display:grid;grid-template-columns:86px 1fr;gap:12px;align-items:center;height:32px;margin-left:18px;padding-right:18px}
+.tl-code{font-family:var(--mono);font-size:12px;color:var(--ink-2);font-weight:500}
+.tl-lane{position:relative;height:100%}
+.tl-bar{position:absolute;top:50%;transform:translateY(-50%);height:14px;border-radius:99px;
+  background:linear-gradient(90deg,var(--accent),var(--accent-2));box-shadow:0 4px 14px -4px color-mix(in srgb,var(--accent) 65%,transparent)}
+.tl-bar.plan{background:repeating-linear-gradient(135deg,var(--warn) 0 6px,color-mix(in srgb,var(--warn) 62%,transparent) 6px 12px);
+  box-shadow:0 4px 14px -4px color-mix(in srgb,var(--warn) 55%,transparent)}
+.tl-bar.none{background:transparent;border:1.5px dashed var(--muted);box-shadow:none;height:14px}
+.tl-bar.done{opacity:.5;box-shadow:none}
+.tl-legend{display:flex;gap:20px;font-size:12px;color:var(--muted);margin-top:16px;flex-wrap:wrap}
+.tl-legend i{display:inline-block;width:22px;height:8px;border-radius:99px;margin-right:8px;vertical-align:middle;
+  background:linear-gradient(90deg,var(--accent),var(--accent-2))}
+.tl-legend .plan{background:repeating-linear-gradient(135deg,var(--warn) 0 4px,color-mix(in srgb,var(--warn) 60%,transparent) 4px 8px)}
+.tl-legend .none{background:transparent;border:1.5px dashed var(--muted)}
+.tl .tl-bar{transition:clip-path 1.2s cubic-bezier(.2,.8,.2,1) .2s;clip-path:inset(-8px 0 -8px 0 round 99px)}
+.rv:not(.in) .tl-bar{clip-path:inset(-8px 100% -8px 0 round 99px)}
+
+/* ---- stats ---- */
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:8px 0 22px}
+.stat{position:relative;overflow:hidden;padding:26px 24px 22px;border-radius:var(--r);background:var(--panel);
+  border:1px solid var(--line-soft);box-shadow:var(--shadow);transition:transform .25s,border-color .25s}
+.stat::before{content:"";position:absolute;left:0;top:0;right:0;height:3px;background:var(--grad)}
+.stat::after{content:"";position:absolute;right:-40px;top:-40px;width:120px;height:120px;border-radius:50%;
+  background:radial-gradient(circle,var(--accent-soft),transparent 70%)}
+.stat:hover{transform:translateY(-4px);border-color:color-mix(in srgb,var(--accent) 45%,transparent)}
+.stat b{display:block;font-family:var(--num);font-size:64px;font-weight:400;line-height:1;letter-spacing:-.01em;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;font-variant-numeric:tabular-nums}
+.stat span{display:block;margin-top:10px;font-size:14px;font-weight:600;color:var(--ink)}
+.stat p{margin:4px 0 0;font-size:12.5px;color:var(--muted)}
+
+/* ---- flow ---- */
+.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin:18px 0 8px;counter-reset:fl}
+.flow div{position:relative;padding:20px 18px 18px;border-radius:var(--r);background:var(--panel);
+  border:1px solid var(--line-soft);box-shadow:var(--shadow);transition:transform .25s,border-color .25s}
+.flow div:hover{transform:translateY(-4px);border-color:color-mix(in srgb,var(--accent) 45%,transparent)}
+.flow div:not(:last-child)::after{content:"";position:absolute;right:-14px;top:50%;width:10px;height:10px;
+  border-top:2px solid var(--gold);border-right:2px solid var(--gold);transform:translateY(-50%) rotate(45deg);opacity:.8}
+.flow div b{display:block;font-family:var(--mono);font-size:11.5px;font-weight:600;letter-spacing:.06em;color:var(--accent);
+  margin-bottom:10px;padding-bottom:10px;border-bottom:1px dashed var(--line)}
+.flow div p{margin:0;font-size:13.5px;color:var(--ink-2);line-height:1.7}
+
+/* ---- pull quote ---- */
+.pull{position:relative;margin:34px 0 0;padding:34px 34px 26px 38px;border-radius:var(--r);overflow:hidden;
+  background:linear-gradient(135deg,var(--accent-soft),var(--gold-soft));border:1px solid var(--line-soft)}
+.pull::before{content:"\201C";position:absolute;left:14px;top:-26px;font-family:var(--num);font-size:150px;line-height:1;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;opacity:.55}
+.pull::after{content:"";position:absolute;left:0;top:18px;bottom:18px;width:4px;border-radius:0 4px 4px 0;background:var(--grad)}
+.pull blockquote{position:relative;margin:0;font-family:var(--serif);font-size:clamp(17px,2vw,22px);font-weight:600;
+  line-height:1.8;letter-spacing:0;max-width:52ch;color:var(--ink)}
+.pull figcaption{position:relative;margin-top:16px;font-size:12.5px;color:var(--muted);display:flex;gap:10px;align-items:center}
+.pull figcaption::before{content:"";width:22px;height:1px;background:var(--muted)}
+
+/* ---- deal ---- */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.deal{position:relative;overflow:hidden;padding:28px 26px 24px;border-radius:var(--r);background:var(--panel);
+  border:1px solid var(--line-soft);box-shadow:var(--shadow);transition:transform .25s,border-color .25s}
+.deal::before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:var(--grad)}
+.deal:nth-child(2)::before{background:linear-gradient(90deg,#c9963f,#e0a15e,var(--warn))}
+.deal:hover{transform:translateY(-4px);border-color:color-mix(in srgb,var(--accent) 40%,transparent)}
+.deal h3{font-family:var(--serif);font-size:19px;font-weight:800;margin-bottom:8px}
+.deal .tag{display:inline-block;font-size:11.5px;color:var(--gold);font-family:var(--mono);padding:3px 10px;
+  border-radius:99px;background:var(--gold-soft)}
+.deal dl{display:grid;grid-template-columns:auto 1fr;gap:0 18px;margin:18px 0 0;font-size:13.5px}
+.deal dt,.deal dd{padding:11px 0;border-top:1px solid var(--line-soft)}
+.deal dt{color:var(--muted)}
+.deal dd{margin:0;font-family:var(--mono);font-size:13px;color:var(--ink);text-align:right}
+
+/* ---- risk ---- */
+.risk{display:grid;gap:14px;margin-top:6px}
+.risk article{display:grid;grid-template-columns:136px 1fr;gap:22px;padding:22px 26px;border-radius:var(--r);
+  background:var(--panel);border:1px solid var(--line-soft);border-left:4px solid var(--warn);box-shadow:var(--shadow);
+  transition:transform .25s}
+.risk article:hover{transform:translateX(4px)}
+.risk h3{font-size:14.5px;font-weight:650;margin:0;line-height:1.5}
+.risk h3 span{display:inline-block;font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;color:var(--warn);
+  background:var(--warn-soft);padding:3px 9px;border-radius:99px;margin-bottom:8px}
+.risk h3 strong{display:block}
+.risk p{margin:0;font-size:14px;color:var(--ink-2);max-width:74ch}
+
+/* ---- tables ---- */
+.table-wrap{overflow:auto;border:1px solid var(--line-soft);margin:12px 0 0;border-radius:var(--r);background:var(--panel);box-shadow:var(--shadow)}
+.data-table{width:100%;border-collapse:separate;border-spacing:0;font-size:13.5px}
+.data-table th{position:sticky;top:0;z-index:2;background:color-mix(in srgb,var(--panel-2) 92%,transparent);
+  -webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);text-align:left;font-weight:650;font-size:11.5px;
+  letter-spacing:.1em;color:var(--muted);padding:13px 16px;border-bottom:1px solid var(--line);white-space:nowrap}
+.data-table td{padding:13px 16px;border-bottom:1px solid var(--line-soft);vertical-align:top;color:var(--ink-2);line-height:1.7}
+.data-table tbody tr:last-child td{border-bottom:0}
+.data-table tbody tr:nth-child(even) td{background:color-mix(in srgb,var(--ink) 2.2%,transparent)}
+.data-table tbody tr{transition:background .15s}
+.data-table tbody tr:hover td{background:var(--accent-soft)}
+.data-table td:first-child{color:var(--ink);font-weight:650}
+#lexicon .data-table th:nth-child(1),#lexicon .data-table td:nth-child(1){width:24%}
+@media (min-width:1025px){#lexicon .table-wrap{max-height:min(72vh,680px)}}
+
+/* ---- registry details ---- */
+details.reg{margin-top:18px;border-radius:var(--r);background:var(--panel);border:1px solid var(--line-soft);box-shadow:var(--shadow);padding:0 6px 6px}
+details.reg summary{cursor:pointer;list-style:none;padding:16px 18px;font-weight:650;font-size:14px;display:flex;align-items:center;gap:12px}
+details.reg summary::-webkit-details-marker{display:none}
+details.reg summary::before{content:"+";display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--accent-soft);color:var(--accent);font-family:var(--mono);transition:transform .2s}
+details.reg[open] summary::before{content:"2"}
+details.reg summary span{margin-left:auto;font-family:var(--mono);font-size:11px;color:var(--gold);font-weight:500}
+details.reg .table-wrap{margin:0;box-shadow:none}
+.src{display:inline-block;margin-top:4px;font-size:12px;color:var(--muted)}
+
+/* ---- lexicon / search ---- */
+.lex-tools,.trxtools{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:18px 0 10px}
+.lex-tools label,.trxtools label{font-size:12.5px;color:var(--muted)}
+.lex-tools input,.trxtools input{font:inherit;font-size:14px;padding:11px 18px 11px 40px;min-width:300px;border-radius:999px;
+  border:1px solid var(--line);color:var(--ink);transition:border-color .15s,box-shadow .15s;
+  background:var(--panel) url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23888' stroke-width='2.4' stroke-linecap='round'><circle cx='11' cy='11' r='7'/><path d='M20 20l-3.5-3.5'/></svg>") no-repeat 15px center}
+.lex-tools input:focus,.trxtools input:focus{outline:0;border-color:var(--accent);box-shadow:0 0 0 4px var(--accent-soft)}
+.lex-count{font-family:var(--mono);font-size:12px;color:var(--gold)}
+.lex-group{margin-top:34px}
+.lex-group h3{font-family:var(--serif);font-size:16px;font-weight:700;margin-bottom:2px;display:flex;align-items:center;gap:12px}
+.lex-group h3::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--line),transparent)}
+.lex-group.hidden{display:none}
+tr.hidden{display:none}
+
+/* ---- transcript ---- */
+.trx-chapter{margin-top:38px;position:relative}
+.trx-chapter h3{position:sticky;top:58px;z-index:5;font-family:var(--serif);font-size:17px;font-weight:800;margin:0 0 6px;
+  padding:14px 0 12px;display:flex;justify-content:space-between;align-items:baseline;
+  background:color-mix(in srgb,var(--paper) 82%,transparent);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line)}
+.ch-ts{font-family:var(--mono);font-size:11px;color:var(--gold);font-weight:500;letter-spacing:.06em}
+.turn{display:grid;grid-template-columns:132px minmax(0,1fr);gap:20px;padding:18px 14px;margin:0 -14px;
+  border-bottom:1px solid var(--line-soft);border-radius:12px;transition:background .2s}
+.turn:hover{background:color-mix(in srgb,var(--panel) 70%,transparent)}
+.turn-meta{display:flex;flex-direction:column;gap:4px;align-items:flex-start}
+.spk{font-size:12.5px;font-weight:700;color:var(--c,var(--accent));display:inline-flex;align-items:center;gap:8px;line-height:1.4}
+.spk::before{content:"";flex:none;width:8px;height:8px;border-radius:50%;background:var(--c,var(--accent));
+  box-shadow:0 0 0 3px color-mix(in srgb,var(--c,var(--accent)) 20%,transparent)}
+.ts{font-family:var(--mono);font-size:11px;color:var(--muted);padding-left:16px}
+.turn p{margin:0;font-size:15px;line-height:1.95;color:var(--ink-2);max-width:78ch}
+.turn.hidden{display:none}
+.turn:target{background:var(--accent-soft);box-shadow:0 0 0 1px color-mix(in srgb,var(--accent) 40%,transparent)}
+mark{background:var(--gold-soft);color:inherit;border-radius:3px}
+
+/* ---- footer ---- */
+footer{border-top:1px solid var(--line);padding:34px 24px 80px;color:var(--muted);font-size:12.5px;line-height:1.9}
+footer p{margin:2px 0}
+
+/* ---- to top ---- */
+.totop{position:fixed;right:22px;bottom:24px;z-index:45;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);
+  background:color-mix(in srgb,var(--panel) 80%,transparent);color:var(--accent);cursor:pointer;display:grid;place-items:center;
+  -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);box-shadow:var(--shadow);
+  opacity:0;transform:translateY(12px);pointer-events:none;transition:all .25s}
+.totop.show{opacity:1;transform:none;pointer-events:auto}
+.totop:hover{background:var(--accent);color:var(--accent-ink)}
+.totop svg{width:18px;height:18px}
+
+/* ---- reveal ---- */
+html.js .rv{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.8,.2,1)}
+html.js .rv.in{opacity:1;transform:none}
+
+/* ---- deck mode ---- */
+body[data-mode="deck"] main{padding:0;scroll-snap-type:y mandatory;max-height:calc(100dvh - 58px);overflow:auto}
+body[data-mode="deck"] .block,body[data-mode="deck"] .hero{min-height:calc(100dvh - 58px);scroll-snap-align:start;border-bottom:0;margin:0;border-radius:0}
+body[data-mode="deck"] .block{padding:48px 0;display:flex;flex-direction:column;justify-content:center}
+body[data-mode="deck"] .hero{padding:48px}
+body[data-mode="deck"] .rail{display:none}
+body[data-mode="deck"] .layout{grid-template-columns:1fr}
+body[data-mode="deck"] .rv{opacity:1!important;transform:none!important}
+.deck-hint{display:none}
+body[data-mode="deck"] .deck-hint{display:block;position:fixed;bottom:14px;right:16px;font-family:var(--mono);font-size:11px;color:var(--muted)}
+
+/* ---- responsive ---- */
+@media (max-width:1024px){
+  nav.rail{position:fixed;inset:58px auto 0 0;width:260px;background:var(--panel);border-right:1px solid var(--line);
+    transform:translateX(-100%);transition:transform .25s ease;z-index:35;padding:22px 10px;max-height:none;box-shadow:var(--shadow-lg)}
+  nav.rail.open{transform:none}
+  .rail-toggle{display:inline-block}
+  .layout{grid-template-columns:1fr}
+  .hero{grid-template-columns:1fr;gap:30px;padding:40px 30px}
+  .hero p.lede{max-width:none}
+  .flow{grid-template-columns:1fr 1fr}
+  .flow div::after{display:none!important}
+  .two-col{grid-template-columns:1fr}
+  .stats{grid-template-columns:1fr}
+  .risk article{grid-template-columns:1fr;gap:8px}
+}
+@media (min-width:1025px){.rail-toggle{display:none}}
+@media (max-width:720px){
+  .topbar{padding:0 12px;gap:6px}
+  .brand span{display:none}
+  .brand b{white-space:nowrap}
+  .btn{padding:6px 11px;font-size:11.5px}
+  .shell{padding:0 14px}
+  .hero{padding:32px 20px;border-radius:24px}
+  .hero h1{font-size:clamp(26px,7.6vw,34px);white-space:normal}
+  .keygrid{grid-template-columns:1fr 1fr;gap:10px}
+  .key{padding:16px 14px}
+  .key p{font-size:11.5px}
+  .flow{grid-template-columns:1fr}
+  .bars{padding:6px 16px}
+  .bar-row{grid-template-columns:1fr 70px;gap:8px 12px;padding:14px 0}
+  .bar-label{grid-column:1/2}
+  .bar-num{grid-column:2/3;grid-row:1}
+  .bar-track{grid-column:1/3}
+  .bar-ep{display:none}
+  .lead-list li{grid-template-columns:44px 1fr;gap:10px;padding:18px 16px 18px 12px}
+  .lead-list li::before{font-size:34px}
+  .pull{padding:30px 22px 22px 26px}
+  .lex-tools input,.trxtools input{min-width:0;width:100%}
+  .turn{grid-template-columns:1fr;gap:6px}
+  .turn-meta{flex-direction:row;align-items:baseline;gap:12px}
+  .tl{--lab:62px;padding-right:12px}
+  .tl-row{grid-template-columns:50px 1fr;gap:6px}
+  .tl-code{font-size:10.5px}
+  .tl-tick:nth-child(even){display:none}
+  .stat b{font-size:52px}
+  section.block{padding:54px 0 46px}
+}
+@media print{
+  .topbar,nav.rail,.lex-tools,.trxtools,.deck-hint,.progress,.totop{display:none}
+  body{background:#fff;color:#000}
+  .layout{grid-template-columns:1fr}
+  section.block{page-break-inside:avoid}
+  html.js .rv{opacity:1;transform:none}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  html.js .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body data-mode="read">
+<div class="progress" id="prog"></div>
+<header class="topbar">
+  <div class="brand">
+    <b>順藥 6535</b>
+    <span>2026-11-13　黑石財經「戰略臺灣投資論壇」法人說明會</span>
+  </div>
+  <div class="tools">
+    <button class="btn rail-toggle" id="rail-toggle" type="button">目錄</button>
+    <button class="btn" id="deck-btn" type="button" aria-pressed="false">簡報模式</button>
+    <button class="btn" id="theme-btn" type="button">暗色</button>
+  </div>
+</header>
+
+<div class="shell">
+<div class="layout">
+<nav class="rail" aria-label="章節">
+<a href="#hero" data-target="hero">總覽</a><a href="#highlights" data-target="highlights">五個重點</a><a href="#pipeline" data-target="pipeline">試驗全景</a><a href="#timeline" data-target="timeline">開發時間軸</a><a href="#s207" data-target="s207">207 收案</a><a href="#s206" data-target="s206">206 首例</a><a href="#evt" data-target="evt">第二張藥證</a><a href="#deal" data-target="deal">授權與報價</a><a href="#cart" data-target="cart">CAR-T armor</a><a href="#crispr" data-target="crispr">CRISPR</a><a href="#risk" data-target="risk">風險</a><a href="#lexicon" data-target="lexicon">名詞釋義</a><a href="#transcript" data-target="transcript">完整逐字稿</a>
+</nav>
+
+<main>
+  <section class="hero" id="hero">
+    <div>
+      <div class="kicker"><span class="pill">INVESTOR BRIEF</span><span>法人說明會　51 分 42 秒　附完整逐字稿</div>
+      <h1>順藥 2.0：<br>3001 走向取證，<br><em>兩個平台</em>接下一棒</h1>
+      <p class="lede">總經理葉聖文在同一場說明會裡講了三件事：207 的實際收案數字、206 首例的影像結果、以及為什麼 CAR-T 只賣 IP 不自建。</p>
+      <div class="meta-strip">
+        <span>2026-11-13 15:00</span><span>台北市信義路五段七號 88 樓</span><span>黑石財經主辦</span>
+      </div>
+    </div>
+    <div class="keygrid">
+      <div class="key"><span class="kl">206 首例</span><b>7 <i>天</i></b><p>給藥前 M2 完全阻塞，給藥後第七天百分之百打通</p></div>
+      <div class="key"><span class="kl">207 收案</span><b>28 / 19 / 2</b><p>30 家目標中心裡，28 家通過倫理、19 家啟動、累計 2 人入組</p></div>
+      <div class="key"><span class="kl">日本報價</span><b>1.0 <i>億美元</i></b><p>接近 1 億美元的 total deal size，僅日本市場，未接受</p></div>
+      <div class="key alert"><span class="kl">207 登記狀態</span><b>未開始</b><p>ClinicalTrials.gov 登記仍為「尚未招募」（最後更新 2026-10-19）；公司說明會稱已啟動收案</p></div>
+    </div>
+  </section>
+
+  <section class="block" id="highlights">
+    <h2>五個重點</h2>
+    <p class="sub">依逐字稿整理，時間碼可點回原文。</p>
+    <ol class="lead-list"><li><p><strong>206 第一例的影像結果被具體描述</strong>：給藥前 M2 完全阻塞、給藥後 7 天百分之百打通，症狀明確緩解（約第 26 分鐘）。公司同時強調「這就是第一例」。</p></li><li><p><strong>207 收案進度首次給出可查數字</strong>：30 家目標中心、28 家通過倫理、19 家啟動、累計入組 2 人，目標一年內完成 300 人（約第 22-23 分鐘）。</p></li><li><p><strong>取栓合併（第二張藥證）有前置數據</strong>：以 203 試驗為基礎（單劑量＋EVT 安全性），明年啟動二期（約第 15、30 分鐘）。</p></li><li><p><strong>CAR-T armor 的商業模式講明白了</strong>：只授權 p40 armor 的 IP、不自建細胞製造；美國專利已於去年取得，任何人要用 p40 做 CAR-T 進美國需經順藥授權（約第 46-47 分鐘）。</p></li><li><p><strong>順藥 2.0 三引擎定位</strong>：LT3001（取證／授權）＋ in vivo CAR-T armor ＋ 次世代 CRISPR（約第 50 分鐘）。</p></li></ol>
+    <figure class="pull"><blockquote>我們是用 300 個人來回答這一題，我就只收我想要收的病人，看看我的療效訊號，來回答他我們不是事後分析，是前瞻性的療效確認。</blockquote><figcaption>葉聖文，總經理　<a class="ts" href="#t-3130">31:30</a></figcaption></figure>
+  </section>
+
+  <section class="block" id="pipeline">
+    <h2>試驗全景</h2>
+    <p class="sub">人數為登記值或公司口述值，來源見頁尾。長條長度按 300 人上限等比。</p>
+    <div class="bars"><div class="bar-row" data-status="done"><div class="bar-label"><b>201</b><span>Phase IIa 單劑</span></div><div class="bar-track"><i style="width:8.0%"></i></div><div class="bar-num">24<span>人</span></div><div class="bar-ep">安全性（sICH）<br><span>2020-01 - 2021-02</span></div></div><div class="bar-row" data-status="done"><div class="bar-label"><b>202</b><span>中國二期三臂</span></div><div class="bar-track"><i style="width:99.0%"></i></div><div class="bar-num">297<span>人</span></div><div class="bar-ep">安全性（AE）<br><span>2023-04 - 2024-09</span></div></div><div class="bar-row" data-status="live"><div class="bar-label"><b>203</b><span>取栓合併 Two-Part</span></div><div class="bar-track"><i style="width:22.0%"></i></div><div class="bar-num">66<span>人</span></div><div class="bar-ep">安全性（24h sICH）<br><span>2022-08 - 2026-12</span></div></div><div class="bar-row" data-status="done"><div class="bar-label"><b>205</b><span>多劑量二期</span></div><div class="bar-track"><i style="width:29.7%"></i></div><div class="bar-num">89<span>人</span></div><div class="bar-ep">療效訊號<br><span>2022-08 起</span></div></div><div class="bar-row" data-status="live"><div class="bar-label"><b>206</b><span>影像再通 單臂</span></div><div class="bar-track"><i style="width:3.3%"></i></div><div class="bar-num">10<span>人</span></div><div class="bar-ep">血管再通（AOL）<br><span>2026-10 起 / 2027-12 止</span></div></div><div class="bar-row" data-status="gap"><div class="bar-label"><b>207</b><span>中國二階三 富集</span></div><div class="bar-track"><i style="width:100.0%"></i></div><div class="bar-num">300<span>人</span></div><div class="bar-ep">mRS 0-1<br><span>2026-12 起（登記）</span></div></div></div>
+    <details class="reg"><summary>ClinicalTrials.gov 登記資料對照<span>2026-11-13 查詢</span></summary><div class="table-wrap"><table class="data-table"><thead><tr><th>試驗</th><th>登記編號</th><th>登記狀態</th><th>登記人數</th><th>起始日</th></tr></thead><tbody><tr><td>201</td><td><a href="https://clinicaltrials.gov/study/NCT04091945" target="_blank" rel="noopener">NCT04091945</a></td><td>已完成</td><td>24</td><td>2020-01-27</td></tr><tr><td>202</td><td><a href="https://clinicaltrials.gov/study/NCT05686642" target="_blank" rel="noopener">NCT05686642</a></td><td>招募中</td><td>300</td><td>2023-04-06</td></tr><tr><td>203</td><td><a href="https://clinicaltrials.gov/study/NCT05198323" target="_blank" rel="noopener">NCT05198323</a></td><td>進行中（已停止招募）</td><td>66</td><td>2022-08-11</td></tr><tr><td>205</td><td><a href="https://clinicaltrials.gov/study/NCT05403866" target="_blank" rel="noopener">NCT05403866</a></td><td>已完成</td><td>89</td><td>2022-08-17</td></tr><tr><td>206</td><td><a href="https://clinicaltrials.gov/study/NCT07890298" target="_blank" rel="noopener">NCT07890298</a></td><td>招募中</td><td>10</td><td>2026-10-01</td></tr><tr><td>207</td><td><a href="https://clinicaltrials.gov/study/NCT07754825" target="_blank" rel="noopener">NCT07754825</a></td><td>尚未招募</td><td>300</td><td>2026-12-01（預定）</td></tr><tr><td>LT3001 其他試驗</td><td><a href="https://clinicaltrials.gov/study/NCT04809818" target="_blank" rel="noopener">NCT04809818</a></td><td>已完成</td><td>65</td><td>2021-03-21</td></tr></tbody></table></div></details>
+  </section>
+
+  <section class="block" id="timeline">
+    <h2>開發時間軸</h2>
+    <p class="sub">2020 至 2028。實線為已登記，虛線為尚未登記或僅口述。</p>
+    <div class="tl"><span class="tl-tick" style="--x:0.0000"><i>2020</i></span><span class="tl-tick" style="--x:0.1190"><i>2021</i></span><span class="tl-tick" style="--x:0.2381"><i>2022</i></span><span class="tl-tick" style="--x:0.3571"><i>2023</i></span><span class="tl-tick" style="--x:0.4762"><i>2024</i></span><span class="tl-tick" style="--x:0.5952"><i>2025</i></span><span class="tl-tick" style="--x:0.7143"><i>2026</i></span><span class="tl-tick" style="--x:0.8333"><i>2027</i></span><span class="tl-tick" style="--x:0.9524"><i>2028</i></span><span class="tl-now" style="--x:0.8174"></span><div class="tl-row"><span class="tl-code">201</span><div class="tl-lane"><i class="tl-bar done" style="left:0.95%;width:13.33%"></i></div></div><div class="tl-row"><span class="tl-code">203</span><div class="tl-lane"><i class="tl-bar live" style="left:31.07%;width:52.14%"></i></div></div><div class="tl-row"><span class="tl-code">205</span><div class="tl-lane"><i class="tl-bar done" style="left:31.19%;width:28.33%"></i></div></div><div class="tl-row"><span class="tl-code">202</span><div class="tl-lane"><i class="tl-bar done" style="left:38.81%;width:17.62%"></i></div></div><div class="tl-row"><span class="tl-code">206</span><div class="tl-lane"><i class="tl-bar live" style="left:80.36%;width:14.76%"></i></div></div><div class="tl-row"><span class="tl-code">207</span><div class="tl-lane"><i class="tl-bar plan" style="left:82.38%;width:16.43%"></i></div></div><div class="tl-row"><span class="tl-code">301 / 302</span><div class="tl-lane"><i class="tl-bar none" style="left:89.29%;width:10.71%"></i></div></div></div>
+    <div class="tl-legend"><span><i style="opacity:.45"></i>已完成</span><span><i></i>進行中</span><span><i class="plan"></i>公司稱已啟動（登記尚未更新）</span><span><i class="none"></i>未登記</span></div>
+  </section>
+
+  <section class="block" id="s207">
+    <h2>207：300 人二階三，收案才剛開始</h2>
+    <p class="sub">公司把 207 定位成回答「這不是事後分析」的前瞻性試驗，同時用來推算三期規模。</p>
+    <div class="stats">
+      <div class="stat"><b>28</b><span>家通過倫理審查</span><p>目標 30 家</p></div>
+      <div class="stat"><b>19</b><span>家中心已啟動</span><p>啟動不到兩週入組 2 人</p></div>
+      <div class="stat"><b>300</b><span>人目標收案</span><p>公司口述一年內完成</p></div>
+    </div>
+    <ul class="plain-list"><li><p><strong>207 設計</strong>：富集（enrichment）只收二期看到療效的族群：中重度、手腳或語言受損、前循環責任血管顯著狹窄；0.025／0.05 對安慰劑，主要終點 mRS 0-1、關鍵次要 0-2（約第 16-19 分鐘）。</p></li></ul>
+  </section>
+
+  <section class="block" id="s206">
+    <h2>206：用影像證明「溶栓但不出血」</h2>
+    <p class="sub">單臂、開放標籤、10 人，每位病人至少三次腦血管影像。這是回答買方「too good to be true」的硬證據。</p>
+    <div class="flow">
+      <div><b>00 給藥前</b><p>CTA／MRA 確認顱內動脈阻塞，M2 段完全阻塞</p></div>
+      <div><b>01 給藥</b><p>多劑量 LT3001，24 小時內完成第一次給藥</p></div>
+      <div><b>02 影像追蹤</b><p>至少三次腦血管影像，看 AOL 評分是否改善</p></div>
+      <div><b>03 第七天</b><p>首例血管百分之百打通，症狀明確緩解</p></div>
+    </div>
+    <figure class="pull"><blockquote>所以影像上去初步的證明在這一例的患者裡，他的血栓是溶掉的，血管是打通的。那他們很興奮，我們也很興奮，但我們也知道這就是第一例。</blockquote><figcaption>葉聖文，總經理　<a class="ts" href="#t-2555">25:55</a></figcaption></figure>
+  </section>
+
+  <section class="block" id="evt">
+    <h2>第二張藥證：取栓之後沒有恢復的那群人</h2>
+    <p class="sub">公司引用的前提是：取栓技術成功，但超過一半病人三個月後仍無法自理。</p>
+    <div class="flow">
+      <div><b>01 取栓完成</b><p>大手術成功，血管打通、栓子取出</p></div>
+      <div><b>02 兩小時評估</b><p>muscle power 加上影像，判斷是否 recovery 不佳</p></div>
+      <div><b>03 入組給藥</b><p>以 203 試驗的安全性為基礎，進入二期</p></div>
+      <div><b>04 九十天 mRS</b><p>主要看功能結局，搭配影像看再灌流變化</p></div>
+    </div>
+    <p class="sub" style="margin-top:16px">203 已完成單劑量併用取栓的安全性驗證（NCT05198323，Two-Part、66 人）；多劑量對照試驗公司口述明年啟動。</p>
+  </section>
+
+  <section class="block" id="deal">
+    <h2>授權：兩個報價，一個都沒簽</h2>
+    <p class="sub">買方要的三件事：前瞻性數據、劑量 rationale、溶栓的直接證據。公司說 2028 才是談全球授權的好時點。</p>
+    <div class="two-col">
+      <div class="deal">
+        <h3>日本提案（2025 年）</h3>
+        <div class="tag">僅日本市場</div>
+        <dl>
+          <dt>Upfront</dt><dd>約 1,000 萬美元</dd>
+          <dt>Total deal size</dt><dd>接近 1 億美元</dd>
+          <dt>結果</dt><dd>未接受</dd>
+          <dt>理由</dt><dd>要維持 Ex-China 完整性</dd>
+        </dl>
+      </div>
+      <div class="deal">
+        <h3>印度提案（近期）</h3>
+        <div class="tag">自行做三期、自行銷售</div>
+        <dl>
+          <dt>條件</dt><dd>與日本相當</dd>
+          <dt>形式</dt><dd>條件式授權（討論中）</dd>
+          <dt>把關</dt><dd>臨床條件與合約履行</dd>
+          <dt>結果</dt><dd>未定</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="cart">
+    <h2>CAR-T armor：只賣輪胎，不造車</h2>
+    <p class="sub">p19 是半個訊號，p40 是另一半。只有 CAR-T 碰到腫瘤時才補齊，這個「安全鎖」是專利的主張。</p>
+    <div class="flow">
+      <div><b>01 遇到腫瘤</b><p>CAR-T 被抗原活化，自己表現 p19</p></div>
+      <div><b>02 補上 p40</b><p>外給 p40 與 p19 組成完整 IL-23 訊號</p></div>
+      <div><b>03 擴增不耗竭</b><p>走向 memory effector，延長作用時間</p></div>
+      <div><b>04 授權 IP</b><p>不做細胞製造，按靶點分別授權給 CAR-T 開發商</p></div>
+    </div>
+    <p class="sub" style="margin-top:16px">公司口述美國專利已於 2025 年取得；任何人要用 p40 做 CAR-T 進美國，需經順藥授權。</p>
+  </section>
+
+  <section class="block" id="crispr">
+    <h2>CRISPR：與引正基因的合作</h2>
+    <p class="sub">順藥出中樞神經的開發知識，引正出編輯工具與腦部遞送。</p>
+    <ul class="plain-list"><li><p><strong>CRISPR</strong>：與引正基因合作，訴求大片段插入／變更與非腺病毒腦部遞送載體（約第 49 分鐘）。</p></li></ul>
+  </section>
+
+  <section class="block" id="risk">
+    <h2>風險與留意</h2>
+    <p class="sub">各項皆可對照說明會原文或公開登記資料。</p>
+    <div class="risk"><article><h3><span>看點 01</span><strong>207：登記狀態與公司說法有時間差</strong></h3><p>ClinicalTrials.gov（NCT07754825）顯示「尚未招募」、預定起始 2026-12-01、最後更新 2026-10-19；公司於說明會表示 19 家中心已啟動、2 人入組。兩者時間點不同，登記資料可能尚未更新。</p></article><article><h3><span>看點 02</span><strong>202／205 屬事後分析</strong></h3><p>公司自述買方第一個質疑就是「事後分析」，207 正是為回答這題而設計，結果未出前不宜當確認性療效。</p></article><article><h3><span>看點 03</span><strong>劑量關係不線性</strong></h3><p>低劑量在部分族群優於高劑量，公司以「中樞神經不易建立漂亮劑量關係」解釋，這是三期設計的潛在爭點。</p></article><article><h3><span>看點 04</span><strong>CAR-T 平台尚無自家臨床數據</strong></h3><p>人類證據來自授權方與動物模型；公司自述做 CAR-T 的技術成熟度不如已耕耘十年的同業。</p></article><article><h3><span>看點 05</span><strong>報價不等於成交</strong></h3><p>日本與印度的提案都只是 recognition，公司明確表示要全球整包。</p></article></div>
+  </section>
+
+  <section class="block" id="lexicon">
+    <h2>名詞釋義</h2>
+    <p class="sub">54 條術語與背景說明。可直接搜尋「207」「sICH」「armor」等關鍵字。</p>
+<div class="lex-tools">
+      <label for="lex-q" style="font-size:12.5px;color:var(--muted)">搜尋</label>
+      <input id="lex-q" type="search" placeholder="輸入術語、人名、試驗代號" autocomplete="off">
+      <span class="lex-count" id="lex-count"></span>
+    </div>
+    <section class="lex-group" id="lex-0"><h3>藥品、試驗與藥證口徑</h3><div class="table-wrap"><table class="data-table"><thead><tr><th>名詞</th><th>說明</th></tr></thead><tbody><tr><td><strong>LT3001／3001</strong></td><td>順藥核心資產，全新小分子溶栓藥，開發十年</td></tr><tr><td><strong>LT1001</strong></td><td>長效止痛改良型新藥；台灣藥證換得東南亞、烏克蘭、印度、約旦</td></tr><tr><td><strong>202</strong></td><td>中國二期，297 人三臂（96／99／102），主要終點安全性</td></tr><tr><td><strong>205</strong></td><td>二期試驗（登記 89 人），mRS 0-2：60% vs 64%，結果為陰性。</td></tr><tr><td><strong>206</strong></td><td>台灣開放標籤單臂 10 人，主要終點 24 小時血管再通（AOL）；登記編號 NCT07890298</td></tr><tr><td><strong>207</strong></td><td>上藥主辦中國二期 300 人三臂（0.025／0.05／安慰劑），主要終點 mRS 0-1；登記編號 NCT07754825</td></tr><tr><td><strong>203 試驗</strong></td><td>取栓合併的先行試驗，作為第二張藥證二期的依據。ClinicalTrials.gov 上符合的登記為 NCT05198323（Two-Part、66 人、2022-08 起）；經濟日報 2026-11-13 亦報導 203 試驗 Part A 已完成並展現良好安全性。編號對應尚待公司確認。</td></tr><tr><td><strong>301</strong></td><td>中國 Phase 2/3（二階三）取證試驗。截至 2026-11-13，ClinicalTrials.gov 以 LT3001 查得 7 筆登記，尚無 Phase 3</td></tr><tr><td><strong>302</strong></td><td>美國第二個三期；「301 做成什麼樣的時候加 302，美國這張證要給我們」。截至 2026-11-13，登記資料尚無 Phase 3／302 紀錄</td></tr><tr><td><strong>二階三／二接三</strong></td><td>同一件事的兩種講法：CDE 建議的最快取證路徑（Phase 2/3 seamless）</td></tr><tr><td><strong>enrichment（富集）</strong></td><td>只收二期裡療效最好的那群（中重度、手腳或語言受損、前循環責任血管顯著狹窄）</td></tr><tr><td><strong>placebo rate</strong></td><td>輕症安慰劑組 80% 會自癒，限縮到中重度降到 60%，才有 20% 差距可驗</td></tr><tr><td><strong>mRS 0-1 主要／0-2 關鍵次要</strong></td><td>CDE 重視 0-2；FDA 連 shift 都算黃金終點</td></tr><tr><td><strong>MRCT</strong></td><td>多區域臨床試驗；美國取證看中國三期與含美國 MRCT 兩套數據是否一致</td></tr><tr><td><strong>超窗中風</strong></td><td>24 小時內不取栓、不打 tPA 的病人＝第一張藥證族群</td></tr><tr><td><strong>第二張藥證（取栓合併）</strong></td><td>取栓後 2 小時 muscle power＋影像判定 recovery 不佳者入組，明年啟動二期（公司口述）</td></tr><tr><td><strong>AOL</strong></td><td>Arterial Occlusion Lysis，血管阻塞再通評估，206 主要終點</td></tr><tr><td><strong>M2</strong></td><td>中大腦動脈 M2 段；206 第一例給藥前 100% 阻塞、7 天後 100% 打通</td></tr><tr><td><strong>muscle power</strong></td><td>肌力分級；取栓後約 2 小時的初步 recovery 判定</td></tr><tr><td><strong>reperfusion deficit／遠端栓塞／內皮損傷</strong></td><td>取栓後逾 50% 病人三個月仍非 mRS 0-2 的三個機制解釋</td></tr><tr><td><strong>前循環／責任血管顯著狹窄</strong></td><td>207 納入條件，用以排除小血管與會自癒的中風</td></tr><tr><td><strong>30 家中心／28 家倫理／19 家啟動</strong></td><td>上藥 207 執行進度；公司稱 11 月結束 30 家全開，啟動不到兩週入組 2 人（公司口述）</td></tr></tbody></table></div></section>
+    <section class="lex-group" id="lex-1"><h3>交易與報價</h3><div class="table-wrap"><table class="data-table"><thead><tr><th>名詞</th><th>說明</th></tr></thead><tbody><tr><td><strong>日本報價</strong></td><td>2025 年（中國 300 人結果剛出）日本公司提議拿日本市場：約 <strong>1,000 萬美元 upfront</strong>、<strong>接近 1 億美元 total deal size</strong>；順藥未接受，理由是要全球整包（公司口述，未見合約或重訊）</td></tr><tr><td><strong>印度報價</strong></td><td>近期印度公司提案，條件「跟日本差不多」；對方要在印度自做三期、自行銷售（公司口述）</td></tr><tr><td><strong>條件式授權</strong></td><td>先授權、把臨床條件與合約履行綁進審查權</td></tr><tr><td><strong>total deal size／upfront</strong></td><td>整包金額（含里程碑與分潤）／簽約金</td></tr><tr><td><strong>recognition／「上看一個 B」</strong></td><td>市場報價被視為價值認可；「一個 B」＝10 億美元級的全球授權規模想像</td></tr></tbody></table></div></section>
+    <section class="lex-group" id="lex-2"><h3>CAR-T armor 平台</h3><div class="table-wrap"><table class="data-table"><thead><tr><th>名詞</th><th>說明</th></tr></thead><tbody><tr><td><strong>armor</strong></td><td>CAR-T 的「裝甲」：額外給 T 細胞一個強化訊號，讓它長得多、活得久、不耗竭</td></tr><tr><td><strong>p40／p19（IL-23）</strong></td><td>設計邏輯：CAR-T 碰到腫瘤自己表現 p19（半個月亮），再補 p40，二合一才是完整 cytokine；只有遇腫瘤才作用，故毒性可控</td></tr><tr><td><strong>UNC／北卡</strong></td><td>美國北卡大學教堂山分校教授的發明；順藥 2024-25 取得授權，<strong>美國專利 2025 取得</strong></td></tr><tr><td><strong>第四代 CAR-T</strong></td><td>加 armor 的世代定義</td></tr><tr><td><strong>IL-15／IL-18</strong></td><td>已在用的細胞激素型 armor，毒性（免疫風暴）難控</td></tr><tr><td><strong>免疫風暴（CRS）</strong></td><td>cytokine release syndrome，活化過強 CAR-T 的最大毒性</td></tr><tr><td><strong>神經母細胞瘤／腦癌模型</strong></td><td>p40 加上去後腫瘤復發仍被壓制</td></tr><tr><td><strong>B7-H3／胰臟癌</strong></td><td>p40 在 solid tumor 模型勝過 IL-15／IL-18</td></tr><tr><td><strong>solid／liquid tumor</strong></td><td>實體瘤／血液瘤；血液瘤不到 10%，實體瘤佔約 90%</td></tr><tr><td><strong>memory effector T cell</strong></td><td>具記憶與效應功能的 T 細胞</td></tr><tr><td><strong>in vivo CAR-T</strong></td><td>不抽出細胞，直接靜脈打載體，在體內生成 CAR-T</td></tr><tr><td><strong>米其林輪胎比喻</strong></td><td>「拿到好輪胎但不會造車」→ 只授權 IP，不自建 CAR-T 能力</td></tr><tr><td><strong>Kelonia／禮來（Lilly）</strong></td><td>「授權給 CAR-T 開發商、最後由大廠整包收購」的模式舉例：Kelonia 先前分別與 J&amp;J（2025-11）、Astellas Xyphos（2024）合作，2026-04-20 由禮來收購<br><span class="src">來源：Lilly 新聞稿、CNBC、FierceBiotech、Nature Reviews Drug Discovery 2026-04-27</span></td></tr><tr><td><strong>「七個 B 的 deal」</strong></td><td>即上一筆：禮來收購 Kelonia，簽約金 32.5 億美元、含里程碑總額上看 70 億美元，為 in vivo CAR-T 至今最大交易。</td></tr></tbody></table></div></section>
+    <section class="lex-group" id="lex-3"><h3>CRISPR 平台</h3><div class="table-wrap"><table class="data-table"><thead><tr><th>名詞</th><th>說明</th></tr></thead><tbody><tr><td><strong>引正基因（GenEditBio）</strong></td><td>香港基因編輯公司；順藥持股約 2.86%，晟德 2026-07 加碼</td></tr><tr><td><strong>大範圍插入／變更</strong></td><td>不只基因剔除或鹼基編輯（base editing），可做大片段插入／替換</td></tr><tr><td><strong>非腺病毒遞送載體</strong></td><td>引正自研的腦部遞送載體，避開腺病毒毒性</td></tr><tr><td><strong>靶點篩選（明年）</strong></td><td>今年合作、明年取得初步靶點與動物數據，再談早期授權（公司口述）</td></tr><tr><td><strong>CNS</strong></td><td>中樞神經系統，順藥主戰場</td></tr></tbody></table></div></section>
+    <section class="lex-group" id="lex-4"><h3>公司、機構與人物</h3><div class="table-wrap"><table class="data-table"><thead><tr><th>名詞</th><th>說明</th></tr></thead><tbody><tr><td><strong>順藥／順天醫藥生技（Lumosa）</strong></td><td>6535.TWO</td></tr><tr><td><strong>上藥</strong></td><td>上海醫藥集團，207 出資與執行方，順藥不在 sponsor 欄</td></tr><tr><td><strong>晟德</strong></td><td>晟德大藥廠（4123），順藥母公司</td></tr><tr><td><strong>CDE</strong></td><td>中國藥品審評中心，管臨床設計與藥證</td></tr><tr><td><strong>FDA／NDA</strong></td><td>美國法規單位／新藥查驗登記</td></tr><tr><td><strong>IRB（倫理）</strong></td><td>人體研究倫理審查委員會，收案前置</td></tr><tr><td><strong>葉聖文（總經理）</strong></td><td>本場主講人<br><span class="src">來源：順藥官網「經營團隊」頁載「葉聖文博士　總經理」，專長分子生物學、毒理學</span></td></tr><tr><td><strong>黑石財經「戰略臺灣投資論壇」</strong></td><td>主辦單位與正式名稱：黑石財經舉辦之法人說明會「戰略臺灣投資論壇」；2026-11-13 15:00，台北市信義區信義路5段7號88樓。來源：順藥 2026-11-02 公開資訊觀測站公告。</td></tr></tbody></table></div></section>
+  </section>
+
+  <section class="block" id="transcript">
+    <h2>完整逐字稿</h2>
+    <p class="sub">64 個話輪、12 個章節。逐字稿依說明會錄音整理，時間碼為約略值；內容以公司正式說明為準。</p>
+    <div class="trxtools">
+      <label for="trx-q" style="font-size:12.5px;color:var(--muted);align-self:center">搜尋</label>
+      <input id="trx-q" type="search" class="lex-tools input" placeholder="搜尋逐字稿內容" autocomplete="off"
+        style="font:inherit;font-size:13.5px;padding:8px 11px;min-width:240px;border:1px solid var(--line);background:var(--panel);color:var(--ink)">
+    </div>
+    <section class="trx-chapter" id="trx-0"><h3>開場<span class="ch-ts">00:00:00</span></h3><div class="turn" id="t-000000"><div class="turn-meta"><span class="spk">主持人</span><a class="ts" href="#t-000000">00:00:00</a></div><p>各位業界先進午安，歡迎參加黑石財經戰略台灣投資論壇。這個場次為大家邀請順天醫藥生技股份有限公司葉聖文總經理與我們分享公司近況及未來展望。會議時間是50分鐘，現在我們把時間交給葉總經理，葉總經理請。</p></div><div class="turn" id="t-000023"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-000023">00:00:23</a></div><p>那首先，謝謝這個平台，這是一個非常好的主辦單位，然後幫我們安排了這樣的機會跟大家做交流。那也很，舊雨新知，看到很多熟悉的面孔。那謝謝各位投資人、各位法人撥冗來，讓我們有機會來為各位介紹一下順藥最近的一些進展跟未來的規劃。</p></div><div class="turn" id="t-000046"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-000046">00:00:46</a></div><p>那今天就像我們的標題這邊給各位展示的，我今天最主要的是跟各位先報告一下我們核心管線LT3001的目前的一些臨床試驗推進的進度，跟我們未來對它的一些期待。那再來更是想要藉這次機會呢，跟各位介紹一下我們已經佈局大概兩年多的一個、兩個先進的 advanced therapy 的兩個平台。那我們很期待它會是未來順藥2.0的一個新的一個成長的一個動力。那一個呢是 CAR-T，可以使用在各式 CAR-T 的一個裝甲平台。那我們知道 CAR-T 是一個大家很期待的一個免疫療法，可以突破很多的自免疾病、癌症疾病、液體瘤、實體瘤，大家都對它寄予厚望。那它有些不足，那我們這個平台剛好可以補足它未來發展的一個更好的一個潛力。</p></div><div class="turn" id="t-000147"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-000147">00:01:47</a></div><p>那第二個呢是一個所謂的次世代基因編輯的 CRISPR 的平台。順藥致力在 CNS，我們很希望提供給這些神經疾病的病患有更好的治療，那很多的病患是它基因出了問題。那我們提供一個精準編輯它的、治療病因的一個機會。那跟透過跟引正基因的合作，透過跟腦遞送的一個很好的一個、核心的一個載體，我們期待這一個新的 CRISPR 平台，在未來的一年、兩年可以看到很卓越的一個試驗成果，也有一個未來很好合作機會。那這兩個都是非常先進、advanced、novel、first-in-class 的一個平台，那也是平台表示我們可以跟很多的單位做合作，也期待這些很多的合作機會可以讓順藥在短時間內就可以有一些合作的機會展示成、展示成果，那讓各位的法人或是各位的先進可以得到這樣的資訊。所以我們接下來就要花點時間來跟各位介紹順藥2.0究竟是一個什麼樣的模樣，那我們為什麼要選擇進入一個順藥2.0。</p></div></section><section class="trx-chapter" id="trx-1"><h3>前傳：LT1001 鋪墊與順藥 2.0 的起心動念<span class="ch-ts">00:02:59</span></h3><div class="turn" id="t-000259"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-000259">00:02:59</a></div><p>那簡單 go over 一下我們順藥，在2025年之前我們花了非常多的力氣在建立順藥的核心資產。第一個就是我們的一個改良型新藥 LT1001。我們在中國、我們在台灣做了三期，台灣拿到藥證，那我們就花了很多力氣想要把這個藥證的潛力最大化。所以這張台灣藥證透過團隊的努力，它換成了東南亞藥證，換成了烏克蘭藥證，那也換成了印度的發展，跟換成了約旦的發展。所以我們透過團隊的努力跟合作開發商的努力，1001有一個很好的一個核心資產的一個鋪墊，也換成了現金流。</p></div><div class="turn" id="t-000349"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-000349">00:03:49</a></div><p>那3001是我們已經開發十年的一個全新的一個小分子新藥。長效止痛藥是一個劑型改良，它是改良式新藥；3001不一樣，它是一個全新小分子，想要去對抗中風這一個巨大的藍海。它是個困難適應症，但它換來的商業價值也是無限大。所以有了1001的鋪墊，我們開始了3001的幾個重要的二期試驗，也在2025年大概花了五年的時間，完成了三個關鍵的二期。那有這個三個關鍵二期試驗的成果呢，讓我們現在可以把3001推進到準備要取證的中國二階三，也、也有這幾個重要的二期的成果，讓我們現在可以推進到全球授權這個最後一哩路。所以我們現在知道說順藥的核心是要推進3001，但有一個更重要的是，我們怎麼去建立3001下一個的一個成長動力。因為3001要進入臨床試驗的晚期了，要接近出場了，那順藥的未來要靠什麼來做成長的動能？</p></div><div class="turn" id="t-000459"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-000459">00:04:59</a></div><p>所以我們在2026年花了非常多的力氣去評估幾個重要的新技術平台，那希望找到裡面有差異化、有優勢，那甚至可以佈局全球重要的一個疾病，大廠有興趣、未來有大的交易的機會。那說實話，就都是 first-in-class、best-in-class 最困難的幾個技術。那我們最後選定的呢，就是剛剛提到的一個 CAR-T 的 armor，就是來自於美國的一個大學，它是來自於美國北卡的一個、一個學校的一個發明。那這個發明呢剛好就對著現在 CAR-T 這個火熱的市場，要去補足它最缺的那個武裝裝甲的一個技術。那同時我們也透過晟德的幫忙，透過順藥的合作，跟引正基因有一個相當深度的一個交流，那也發、也發現到它的這個次世代基因編輯技術正是我們現在要對付很多困難中樞疾病所必須的一個平台技術。所以透過這兩個合作，兩個新興的平台，我們從2027年起進入順藥2.0，全力去推進3001，完成這最後一個中國取證的臨床試驗，再把這個數據透過國際的授權，補足它的機轉，得到一個全世界的一個上市的一個最後一個里程碑。所以這邊是完全馬不停蹄往前推進的同時，我們要去建立這兩個新興的平台，那讓順藥的成長動能可以一棒接一棒，它的成長曲線可以有持續的發展，讓這個公司可以有更好的一個、長期的一個成長的一個機會。</p></div></section><section class="trx-chapter" id="trx-2"><h3>LT3001：202／205／206 三個二期的意義<span class="ch-ts">00:06:48</span></h3><div class="turn" id="t-000648"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-000648">00:06:48</a></div><p>那接下來我就花一些時間跟各位介紹，我剛剛跟各位報告了3001的臨床試驗，以及這兩個新興平台，我們是怎麼看待看待它們未來的展望的。中風新藥就是3001，是順藥最重要的一個核心資產。那過去我們完成了202、205、206三個重要的二期試驗，它們的、它們代表的意義都不一樣。這邊包含了中國、包含了歐洲美國、包含了台灣的病人；包含了無藥可醫的病人，也包含了取栓的病人。所以我們在超過300個中風病人身上，去驗證3001的安全性跟探索它可能的療效。那這三個試驗我們之中得到了一個非常一致的訊號，我們終於知道了怎麼去做急性中風的試驗，終於知道怎麼去設計個可以執行的三期，透過這些二期試驗的累積。</p></div><div class="turn" id="t-000747"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-000747">00:07:47</a></div><p>那我跟各位報告，中風是個困難適應症，這是一個藍海，我們在做的是 first-in-class。所以我常常鼓勵我們的同仁，我們在做的是別人沒做過的事，所以我們必須靠數據的累積，才能得到應證，才能夠往前。所以這不是一蹴可幾的，我們不是做一個二期接一個三期接一個取證，這個 roadmap 不是像大家想的這麼簡單。重要的是從每個試驗中都要有得到新的資訊，讓我們可以為下一步做最好的一個設計。所以我們得到三個二期的成果之後呢，我們就去跟中國的 CDE 做溝通。跟中國的 CDE 做溝通之後呢，他就建議我們做一個最快的取證路徑，就是一個簡單的二階三試驗。</p></div><div class="turn" id="t-000834"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-000834">00:08:34</a></div><p>為什麼要做這個二階三試驗呢？我們在過去的，三個二期試驗裡面使用了不同的劑量。這個不同的劑量裡面包含一個低劑量跟一個高劑量。在有一些人群或是有一些終點裡面，低劑量表現的比高劑量還好。那這有時候就比較有挑戰性了，大家當然很期待說，高劑量表現的比低劑量好，有個很漂亮的劑量關係。但我必須跟各位報告，在中樞神經的疾病裡面，其實這樣的劑量關係並不是那麼容易建立的。所以我們要做的就是充分去論證，這兩個劑量在我們的這個目標族群裡面它的表現如何。法規單位也就期待我們充分的論證之後，可以選擇一個合適的劑量進到中國的三期，那中國一個三期可以取證。所以這個 Phase 2 接 Phase 3 的 protocol，CDE 是審過的，他建議我們這樣做，這樣做之後呢就有機會拿到中國的藥證。</p></div><div class="turn" id="t-000931"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-000931">00:09:31</a></div><p>所以我們得到了這樣的一個許可跟溝通交流的結果，我們就馬不停蹄跟上藥開始啟動這樣的一個300人的試驗。那下一張會跟各位介紹這個試驗具體的設計跟它目前的進度，但是這是現在的重中之重，上藥也是全力在推進。他用一個 best scenario，動員全公司的力量，想要在一年的時間完成這300個人的試驗，他也知道這很重要。那除了中國要取證之外，第二件事就是全球了。我的美國市場、我的歐洲市場，我們什麼時候要取證？所以第二條線就是跟各位介紹我們全球取證的計畫。那最關鍵的呢就是授權，所以第二條線的最關鍵…</p></div><div class="turn" id="t-000900"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-000900">00:09:00</a></div><p>……過程。在美國、在歐洲，這個藥要上市，要讓每個醫師可以了解，要用最快的時間到 peak sales，我們需要大廠商的一個已經的、的、的能力。所以我們要怎麼把這個東西賣給大廠商呢？目前我們最可得到肯定的他們的期待就是，在這個中國二階三的這個 300 人的試驗得到一個正面的結果，看到一個說，誒我們過去討論出來的高需求失能的中風族群，我們就只針對這個族群去做收案，看看我們藥物的表現。如果跟之前預測的一樣，誒表示我們驗證了這樣一個假設。再來就是，我做了 300 個人的中風病人，沒有出血，我是一個創新溶栓藥，哪有這麼好的事？他們最想，他們嘴巴上是說我好奇想知道你的溶栓機制，那骨子裡可能想的是 too good to be true。所以我們為了回答這個問題，用一個科學的方法，我們設計了一個臨床試驗。</p></div><div class="turn" id="t-000955"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-000955">00:09:55</a></div><p>這個臨床試驗呢，我們用台灣的研究能力，在台灣做一個 10 個人，一個 open-label single-arm 的一個二期，就是這邊提到的 206 影像機轉研究。我們每一個中風病人進來，我們先有一張影像去證明他的血管完全塞住了，給他我們的藥物，三天之後去觀察血管有沒有通，就是一個很簡單、直接的證據，去告訴人家我這個溶栓藥真的有溶栓的功能。那這 10 個人的試驗呢，在我們團隊的努力下也是已經在今年開始收案，目前入組了一個病人。那這每個病人的、一例一例的這些影像、它的一些結果，都很值得我們深入去討論跟去研究。那今天我也會跟各位做一個分享，說我們目前觀察到什麼樣的一個結果。那我們自己是覺得很振奮。但是當然這個試驗的結果都是為了搭配 300 個人的臨床 outcome 互相交互做參照，有機轉證明了、臨床 outcome 看到了，國際的授權就不遠了。所以我們期待在這兩個試驗的結果得到初步的問證之後呢，2028 年就會是一個談國際授權很好的 timing，因為大家都在等。說實話，要授權也不是我們講講就可以授權的，我們需要 evidence，那我們現在就在 collect evidence，這最後一里路要去談國際的授權。</p></div><div class="turn" id="t-001110"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-001110">00:11:10</a></div><p>講美國就好了，美國是最重要的市場，美國的 NDA 之路要怎麼走呢？那初步美國的 FDA 也同意，假如中國的 Phase 3 看起來數據非常的正面，跟國際的這個含美國的 MRCT 兩個數據結果差不多，指向一樣的療效的話，那就當作兩個三期，美國要取證。那這也是我們目前看到一個新藥要在美國取證一個最短、最快、又最精簡的道路。所以我們才會在不管是中國的 301 的 protocol 就進去跟美國的 FDA 做溝通，我希望他知道我要做什麼、他認可、甚至他指導我，我 301 做成什麼樣的時候加 302，美國這張證要給我們。那初步因為這是 unmet medical need 很強的適應症，所以兩個法規單位都十分的支持，所以這是一個兩個三期就要在中國、歐美幾個主要市場都可以取證的一個，我們覺得是一個最優的一個開發路徑。</p></div><div class="turn" id="t-001220"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-001220">00:12:20</a></div><p>那這部分呢大概涵括了超過 50% 這些目前這些急性中風的病人，他們沒辦法打 tPA、時間太晚了、沒辦法取栓、血管都太小了、或是根本沒有這樣的儀器設備，所以大概超過 50%。那另外有 10% 是目前正在每一年都在增加的，就是這個取栓並用的族群。大概有 10% 到 20% 的病人他是大血管阻塞，最大的那根血管塞住了，那那個最大的血管靠著這些醫材廠商跟影像廠商的每一年不斷的努力，有根導管可以進去了，把栓子可以拖出來了，物理性的把這個血栓直接取掉。所以這件事情是過去這 5 年 10 年大家努力的目標，也都有在推進。</p></div><div class="turn" id="t-001325"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-001325">00:13:25</a></div><p>那只是現在 5 年 10 年的 data 也很多了，case 很多了，一些大型的 review、meta-analysis 開始研究說這些病人最終結果到底好不好？2026 年就有一個 paper 發出來了，過去 10 個大型的取栓試驗，80%、90% 的血管完全通了，血栓取出來了，手術成功了，這些神外醫師很得意，他們都做好了。但是三個月後神內的醫師擔心，怎麼這個病人沒辦法站著走出去？他怎麼還需要臥床？他怎麼手跟腳沒有恢復？這樣的病人大概佔多少呢？超過 50%。這是全世界都知道的數據。所以為什麼現在不管是老藥、新藥都想要去跟取栓手術做合併？因為大家知道這是個昂貴的手術，這群病人都是嚴重的中風，但他完成了一個這麼侵入性的手術之後，他居然沒有得到一個很好的恢復成果，所以大家想要去跟他做合併。</p></div><div class="turn" id="t-001435"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-001435">00:14:35</a></div><p>目前初步成果有誰呢？古代的幾個溶栓藥都有一些初步的成果，像 tPA、TNK 這幾個會出血的溶栓藥，都已經試著要跟取栓做搭配了，也看到一些初步的療效。但是一個最近的 tPA 三期試驗告訴我們，tPA 合併取栓，最後臨床的 outcome 有比較好，但是死亡率增加了。所以目前大家這邊還是非常的不知道，就是好像有用，所以你取栓後去幫他做一點血栓溶解、幫他一些 reperfusion 再加強，似乎對病人有好處，但好像 tPA 不是那麼適合，TNK 也許不是那個藥。所以很多的醫生告訴我們，趕快啟動這個二期，現在就是那個 timing。我們的藥是安全的溶栓藥，加上細胞保護，是最適合這群取栓之後居然沒有辦法恢復正常的病人，趕快用的一個急救療法。那在他們的鼓勵之下呢，因為我們有一個 203 試驗做基礎，初步的證明這個藥加取栓是安全的、沒有問題，所以就可以直接進入一個比較大規模的二期來驗證，到底哪一群病人到底接受到 3001 之後會在取栓手術之後得到一個更好的 outcome。</p></div><div class="turn" id="t-001540"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-001540">00:15:40</a></div><p>這是第二張適應症，這是第二張藥證。超窗中風呢是用在 24 小時內不取栓、不打 tPA 病人，這是藥證一；藥證二呢是取栓手術之後恢復不好的病人，這是藥證二。所以把這兩個藥證拿下來的話，我們就佔了中風至少超過 60% 的病人。剩下 40% 是什麼呢？輕症，就是不需要治療的，或是他不需要額外的藥物干預的，那些就是我們目前比較不會去積極處理的。但是這些一跟二都是現在臨床的需求，都是病人直接需要這樣的治療來幫助他在中風三個月後可以回家、可以工作、可以生活自理。這是 3001 目前的臨床線的時間軸。接下來花一點時間跟各位介紹這幾個試驗的詳細的進度。</p></div></section><section class="trx-chapter" id="trx-3"><h3>207：中國二階三與富集設計<span class="ch-ts">00:16:30</span></h3><div class="turn" id="t-001630"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-001630">00:16:30</a></div><p>207 剛剛跟各位提到，我們 201、207 搭配 301 中國二階三，跟美國溝通過，跟中國溝通過，他們建議我們去 improve、to refine 之後的一個臨床 protocol，他在中國要開 30 個中心。那這個試驗最重要是一個富集的設計，所謂的 enrichment。那這個 enrichment 是什麼意思呢？就是我們之前從三個二期裡面我們什麼病人都收，最後看到一群病人我們的藥物治療的效果最好，我們找到了這群人，現在我就只收這群人。那只收這群人是什麼樣的人呢？其實說實話就是一群中風比較嚴重、比較需要幫助的人，因為這些病人比較嚴重，他不治療他不會自己好，所以我們把這個 placebo rate 控制在一個合理的範圍裡，藥物治療之後才能夠看到一個比較明顯的一個治療的效果。</p></div><div class="turn" id="t-001715"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-001715">00:17:15</a></div><p>簡單說，像輕症的中風，安慰劑組就 80%，我的藥物治療也是 80%，兩組的差異就是 0%。但我把病人限縮到像這樣的一個比較嚴重、比較明顯、不會自癒、不會自己好的病人時，他就降到 60%，安慰劑組不治療只有 60% 會好，藥物如果是 80%，我就有 20% 的差異了。這 20% 的差異我就可以在少少的病人裡驗證他的一個療效，看到一個顯著的 p 值。所以控制 placebo rate 在中風這個臨床設計是十分重要的。但你也可以說我就把病人限制得很嚴重很嚴重，我們就可以用很少的病人做完了。但是這樣未來怎麼推廣？我希望這個藥是可以幫助到很多需要的病人，如果把病人群限縮得非常狹窄的話，未來醫師使用上會很困難。所以我們在緊密討論、拉扯，跟上藥討論，跟醫師討論之後，我們 define 出這一群病人在我們的二期試驗裡都有一致的一個 placebo rate 的控制，我們的治療組也都有一個 10% 以上的一個進步，呈現現在我們三個二期裡面。那這群病人呢就是說實話中重度，NIHSS 就是基線的一個，就是中風後到醫院之後它有一個中重度的一個中風嚴重程度，那最重要他是有手跟腳或是語言的不方便。手跟腳跟語言為什麼這麼重要呢？其實我覺得是因為中風的臨床試驗最終只看一個黃金 endpoint 叫做 mRS。這個 mRS 呢，白話講，就是 FDA 只看這個病人，你治療之後 3 個月，能不能……</p></div><div class="turn" id="t-001800"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-001800">00:18:00</a></div><p>……能夠生活自理。生活自理裡面分數比率、權重最重的，就是你能不能走路，跟你手能不能動。這個佔了整個評分裡面超過 50%，所以我們要連接這個法規單位目前限制的一個、呃、的一個 endpoint 的話，我們就要去規範我們的病人進來的時候是手腳不方便，因為就是針對 endpoint 去設計臨床試驗。那我們目前 207 試驗就是只收手跟腳不方便的病人，而且我們為了去避免那些小血管進來干擾我們的試驗訊號，我們也限制了要前循環，也就是主要其實就是主要的血管，要有個明顯的血管狹窄，去排除那些血管痙攣的啦、內皮損傷的啦、不明原因狹窄的啦，那些跟溶栓藥都沒有關係，所以把它收進來就是增加自己的困擾。所以我們用一個簡單的一個責任前循環、責任血管，責任血管的顯著狹窄，去排除掉那些小中風、輕微中風、會自己好的中風。那當然這些病人，就是無藥可醫的病人，他不能打 tPA、不能取栓，就是入到這個試驗裡面。</p></div><div class="turn" id="t-001925"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-001925">00:19:25</a></div><p>因為當初跟剛剛跟各位報告過，我們在三個二期，有說 0.025 居然表現得比較好，這是我們比較、呃、比較難解釋的，因為大家都期待劑量越高表現得越好。但說實話，中樞神經的適應症裡，劑量關係有時候不是那麼簡單可以很線性去呈現。但為了我們是新藥要發展，我們必須要充分去討論這幾個不同的劑量在我們目標人群裡的表現，不管是安全性或是有效性，充分的論證它，讓我們進三期的 rationale 可以更 solid。所以這裡還是選擇了先前 202 一樣的 0.025 跟 0.05 對照安慰劑。那我們主要 endpoint 呢就是 mRS 0 到 1，功能完全恢復；關鍵的次要指標，CDE 也非常重視的是 mRS 0 到 2。如果以 FDA 的觀點的話，0 到 1、0 到 2 跟 shift，只要是 mRS 相關生活自理的 endpoint，都會是美國取證的一個黃金 endpoint。</p></div><div class="turn" id="t-002040"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-002040">00:20:40</a></div><p>這個試驗對我們最大的價值就在於，做完這 300 個人，再加上前面 202 的數據，我們可以整包一起來做一個更完善的一個評估，來論證到底哪一個劑量適合進三期。更重要的是 CDE，中國的 CDE 給我們一個機會，假如我們在這個目標族群裡，他看你相對比較嚴重，這個目標族群相對比較嚴重，你的進步比率、進步的程度、藥效更大的話呢，你未來三期樣本數他可以讓你在做更少一點。他也期待說，用一個比較少的三期人數、比較快的試驗時間，讓中風病人可以趕快得到這樣的藥物治療的機會。所以這個二期試驗告訴我們的就是，在 enrich 的 population 裡，我們的藥物治療的效果到底是為何。我看到一個進步的 percentage 的差異之後呢，我就可以用這個差異去計算一個三期需要的人數。所謂的三期需要的人數，就是三期做到那個人數的時候呢，統計就會顯著，所以這是一個關鍵的一個二期試驗。那當然，這樣一個我們已經是前瞻性的試驗，專門針對這群有需要的病人，或是我們藥物最有機會的病人去設計臨床試驗的結果的臨床 outcome，也對於全球的授權是有一個關鍵的一個指標的一個效果，所以我們都很期待中國的進度可以再快一點，那當然啦，品質也要好，去完成這個試驗，讓我們可以進入到下一步真的中國的樞紐試驗跟全球的授權。</p></div><div class="turn" id="t-002220"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-002220">00:22:20</a></div><p>那他們說實話也非常的給力。</p></div><div class="turn" id="t-002224"><div class="turn-meta"><span class="spk">主持人</span><a class="ts" href="#t-002224">00:22:24</a></div><p>那個……說得多、慢一點……</p></div><div class="turn" id="t-002226"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-002226">00:22:26</a></div><p>好的好的，謝謝委員。中國的上藥目前是用請全公司之力在推進這個中風新藥的案子。上藥是一個很大的國企，它也是全球 50 大的藥廠，那它也非常重視這樣一個新藥的開發案。上藥過去很多的中成藥，很多的靜脈中藥，很多的藥物在做推廣，但它也知道它需要轉型，它需要面對這個新藥開發的挑戰，所以上藥跟我們花了很多力氣，讓它投入更多的資源。所以它大概在兩個月內就完成了將近 28 家的倫理，那試驗中心啟動一個月，它啟動了 19 家。它告訴我說 11 月結束，30 家都可以啟動。那為什麼要這麼急呢？因為冬天是中風的好發時間，早晚的溫差造成你血管的一個阻塞，是中風好發的一個季節，所以它很期待趕快啟動這些試驗中心，讓這 300 人的入組可以盡快的完成。</p></div><div class="turn" id="t-002340"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-002340">00:23:40</a></div><p>那他們也、他們也很給力。是中心啟動不到兩週，馬上就入組了兩個病人。那隨著中心加速越來越多，這個入組的人數隨著冬天的季節的來臨，我們也很期待按照它自己 project，一年之內可以完成這 300 個人的病人入組，讓我們得到剛剛提到的這樣一個試驗數據，去作為整個三期試驗的一個統計顯著的人數需要的一個計算。所以這是上藥目前的進度。那我們是跟它每個禮拜每個禮拜的做交流，那跟它說我們需要收的就是確認這些運動障礙的病人，確認這個血管有狹窄的病人，保證它這個試驗的質量可以很好，入組速度可以很快。</p></div></section><section class="trx-chapter" id="trx-4"><h3>206：影像機轉與第一例<span class="ch-ts">00:24:40</span></h3><div class="turn" id="t-002440"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-002440">00:24:40</a></div><p>再來是一個我們台灣團隊這邊執行的 206 試驗。這個 206 試驗就是剛剛跟各位報告的，我 300 個人中風病人打下去，我會溶栓但不出血，但我怎麼告訴別人說這個不出血的藥真的可以溶栓？因為很直覺的，溶栓會出血，你不出血的是不是沒有溶栓？所以我們想去證明這件事情，那我們就用臨床試驗來證明。臨床試驗來證明呢，我們在台灣眼前大概在年底前可以開大概四個中心，那去入組這十個病人。那這十個病人呢，為什麼可以入組，為什麼只入組十個病人？是因為我們每個病人都至少要看三次的腦血管影像。三次的腦血管影像來確認他給藥之前血管是塞住的，給藥之後再看清楚他血管有沒有通。所以我們的主要指標呢是在看他治療之後的血管再通的比例。那當然我寫 24 小時，但我們也有看七天，我們就是用連續的影像去觀察這個病人溶栓的一個狀況。</p></div><div class="turn" id="t-002555"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-002555">00:25:55</a></div><p>那目前在北中南都都有臨床中心要準備開始收這個案子。那我們也很感動的是，中部的研究中心在我們啟動這個項目的一週內，就幫我們入組了第一位病人。那完成了這個病人的給藥跟他的觀察，那我們在上個禮拜也是拜訪這樣研究中心，跟醫師討論說這個病人目前的狀況如何。那我們初步得到的一個、初步得到的一個證據是，這個病人在給藥前，他的 M2，就是他的血管是完全阻塞的，血管阻塞程度是百分之百。那給了藥之後的七天呢，這根血管百分之百打通了。所以影像上去初步的證明在這一例的患者裡，他的血栓是溶掉的，血管是打通的。那他們很興奮，我們也很興奮，但我們也知道這就是第一例。所以我們需要再累積第二、三例，更多的病、更多的病患的一個具體的實驗成果，讓我們在不管是跟各位做報告，或在學會上做報告，或是提供給我們的現在正在 communicate 的 partner 做一個直接的證據：我們 300 個人沒出血，而且我們看到他很明確的溶栓。那也跟各位報告，這個病人目前當然還在整個臨床試驗當中，但是他的中風的症狀有很明確的緩解，血管完全打通，就是我們最理想想要看到的一個狀態。那我們也很期待這個藥真的可以幫到病人，那真的看到這個打通，也讓我們覺得很振奮。</p></div></section><section class="trx-chapter" id="trx-5"><h3>第二張藥證：取栓後 recovery 不佳<span class="ch-ts">00:27:35</span></h3><div class="turn" id="t-002735"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-002735">00:27:35</a></div><p>再來一個就是我們的未來。剛剛說的都是現在正在忙、正在做，這群不取栓、不打 tPA 的病人，我們想給他一個，你什麼都沒有，給你一個藥。那這群現在這個是一個不同的 rationale。左邊上面那個圖就是那個取栓的那個醫材、那個設備，可以看到一個網子。所以很簡單的想就是，這是一根腦的血管，裡面一個紅紅的一個很大的血栓塞在那裡。那這個血管因為很粗，所以這個醫材呢可以透過導管在體內靠醫師的手感、靠影像的 guidance，把它導引到這個血栓的位置，用那個網子把血栓整個整個抓、抓抓抓起來，然後抽出來，血栓就抽出來了，所以這是一個理想的示意圖。那說實話，過去從 2015、16 年血栓手術開始在幾個大的三期展現治療的潛力之後，醫師們很積極在推廣這樣一個治療中風的一個手段。那經過十年的努力，它現在也已經是真正大血管中風的病人的黃金療法。你今天血管、很大血管阻塞中風了送到醫院，醫師就會想推去取栓了，趕快把栓子拿出來，拿出來再說。一般對中風治療的了解還是血管先通了，通了之後這個病人怎麼樣都比較有機會，所以這是我們目前一致的認為。所以 tPA 會出血還是打，取栓手術有風險還是做，先把血栓拿出來、血栓溶解掉，病人的血流恢復了，這個……</p></div><div class="turn" id="t-002700"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-002700">00:27:00</a></div><p>病人怎麼樣機會都大一點。只是像剛剛跟各位報告過的，過去 10 年累積了非常多大型的三期、不同 generation 的這醫材，以及不同的病人，他們想要充分去了解，這樣一個侵入性的手術，究竟給病人帶來多大的好處？那目前的結果告訴我們，其實這個醫材很成功的到了，醫師的手藝非常好，把栓子全部拿出來，血流全部回去了，居然還有超過一半、超過 50% 的患者，三個月之後沒有辦法恢復到 mRS 0 到 2，生活不能自理，他不能走路，不能拿筷子，不能工作。所以依然有一半的患者沒辦法完全恢復，大家其實很不能接受，因為我栓子拿出來了，為什麼這個病人居然沒有好？</p></div><div class="turn" id="t-002745"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-002745">00:27:45</a></div><p>那大家當然花很大的力氣想要去了解。那目前大家的一致的認為是，栓子拿出來了，但栓子拿出來的過程中，有時候有一些栓子會斷掉，會變成一塊一塊小塊小塊的，飄到更遠的地方去了。那這個更遠的地方呢，如果又是關鍵的位置的話，欸，那就造成一個遠端的一個關鍵的中風。這個病人那一塊腦子還是沒辦法得到血流，他就依然會有這些手啊、腳啊、神經功能的問題，所以這是一個可能。</p></div><div class="turn" id="t-002815"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-002815">00:28:15</a></div><p>再來就是它因為這個醫材還是很侵入性，它影響到血管的內皮，影響到血管的健康，所以它這樣進進出出的過程中呢，讓這個血管受傷了。血管受傷之後它就塞住了，不管是免疫細胞，還是免疫細胞釋出的自由基，總之這個血管就不健康，它就塞起來，它再狹窄、灌流不足，中風就沒有治好。所以儘管醫師能做的做完了，但病人居然沒有恢復。</p></div><div class="turn" id="t-002845"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-002845">00:28:45</a></div><p>所以大家就想要去幫助這群病人，幫助醫師讓病人更好的恢復。因此我們也根據這樣一個 rationale，根據大家的建議，我們就設計了一個臨床試驗。那目前呢，我對、我們對這個試驗很有信心是因為，我們要篩選的病人呢，是取栓之後沒有好的病人。沒有好的病人的定義是有哪些呢？第一個，取栓手術之後大概兩個小時，醫師會做一個 general assessment，初步的評估，他這時候就可以判斷這個病人的 muscle power 有沒有回來。Muscle power 就是手跟腳有沒有反應、舉不舉得起來、能不能夠對抗地心引力，所以他很快就可以幫我們做一個初步的判斷，這個病人到底有沒有好。</p></div><div class="turn" id="t-002930"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-002930">00:29:30</a></div><p>那搭配影像去判斷這個病人的腦子裡面是不是還有一些灌流不足啊，或是說有一些 reperfusion 的 deficit，總之影像去幫我們判斷一次這個病人還有得救；muscle power 醫師的判斷幫助我們判斷一次這個病人沒有好。所以這個病人還有得救，而且他沒有好，我們就入組進來，進入我們的 3001 對照安慰劑的一個療程。那當然最後的結局黃金 endpoint 就是要看三個月的 mRS 的功能結局，那搭配影像。取栓試驗的好處就是影像文獻多，因為病人已經在用醫材，已經在用這影像在 guidance 了，所以我們有很多的機會影像去看，加了這個 3001 之後，他的這個再灌流的腦子的變化，有沒有反映在這個藥物的一個作用機轉上，做一個很重要的 surrogate marker。</p></div><div class="turn" id="t-003020"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-003020">00:30:20</a></div><p>所以這個試驗我們目前台灣的醫師、美國的醫師、中國的醫師都非常支持，他們都覺得這就是現在要做的。那我們也是積極的跟上藥討論，所以預期就是明年可以啟動這樣一個二期的試驗，我們要拿到 3001 的第二張藥證，讓這些有侵入性手術的嚴重中風的病人，真的可以三個月後生活可以自理，可以走得出醫院。所以以上是我們重要的三個二期試驗、三期試驗的幾個規劃。</p></div></section><section class="trx-chapter" id="trx-6"><h3>授權：買方要的三件事<span class="ch-ts">00:30:50</span></h3><div class="turn" id="t-003050"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-003050">00:30:50</a></div><p>那接下來因為今天是法人說明會，所以大家都會很關心，主要的 business model 是要授權，因為我們相信在最後這一哩路，需要大廠的參與才有足夠的資源做 pre-marketing，讓他更了解這個藥物未來推進才會更順利。甚至我們都覺得這是創新藥，大藥廠才有辦法用它的資源來讓這個藥的效益發揮到最高。那過去這兩三年我們也有跟很多的大廠去做交流，我們也知道他們到底在意的是什麼。那一個中風的新藥我們目前得到的 feedback 來講，幾個，這三個是他們最想要得到我們給他們充分的支持的。</p></div><div class="turn" id="t-003130"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-003130">00:31:30</a></div><p>第一個就是，我們都是事後分析。三個試驗都是事後分析，雖然他們非常的認可我們的二期美國、歐洲都做，不是一個純中國的試驗，但他還是說你還是事後分析。那你事後分析看到這個族群有療效了，你可不可以有個正面的試驗？正面、前瞻性的試驗來告訴我你的假設是對的，越快越好。所以我們因此當初就是因為這個要求，我們跟上藥討論一個二接三，對我們是有好處的。我們是用 300 個人來回答這一題，我就只收我想要收的病人，看看我的療效訊號，來回答他我們不是事後分析，是前瞻性的療效確認。</p></div><div class="turn" id="t-003205"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-003205">00:32:05</a></div><p>第二個就是劑量。新藥開發還是需要劑量的 rationale，很坦白跟各位說，你要嘛就是一個很明確的劑量關係，不然就是充分去告訴大家為什麼要挑這個劑量。所以我們在這次的 300 人，其實大家本來上藥很勇敢說挑個劑量進去就好了，不要做那麼多，你做一個做出來有，CDE 就讓你過了，根本不擔心。但是呢我們還是覺得跟上藥討論說，但是這個藥萬一未來有一天人家問你劑量怎麼選的時候，你沒有好的數據，你又回頭做二期，其實更花時間。上藥也同意，說好我們做創新藥我們就是照規定來，照 CDE 的期待來。所以我們在這次的 300 人裡面，還是選了低劑量高劑量對照安慰劑，我們是想要充分的論證我們選出了一個能力所及、試驗所及、時間所及的一個最佳劑量進入三期，未來不管是 CDE 問、美國 FDA 問，我們都有充分的一個說明去支持三期這個試驗設計。</p></div><div class="turn" id="t-003255"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-003255">00:32:55</a></div><p>再來就剛剛提到了這個 too good to be true 的這個溶栓不出血的問題。所以大家都知道我們是創新藥，知道我們是新的溶栓機轉，但是我們沒有一個更直接的證據告訴大家我不出血但我溶栓。所以剛剛那一例對我們也是很重要，我們就把這一例的每一張血管的圖做成一個報告去告訴這些大公司說，這就是一個、這就是一個 hard evidence，我用影像告訴你我血管通了。所以我們目前設計的 207 跟 206 都是為了 address 這些我們的 partner 想要知道的問題。</p></div></section><section class="trx-chapter" id="trx-7"><h3>市場報價：日本與印度<span class="ch-ts">00:33:30</span></h3><div class="turn" id="t-003330"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-003330">00:33:30</a></div><p>那也不瞞各位說，過去也是收到一些市場的報價，也跟各位做一個分享。其實我們不一定想要這時候授權，但是我們很想知道大家的 feedback，我們想知道這些大藥廠、這些重要市場的 partner 到底怎麼定價我們的這個項目。那過去是收到過一個，可能也跟各位報告過，在日本有一個公司跟我們提了一個 proposal，他想要拿 3001 去開發日本的市場。那那時候呢大概是 2025 年，也就是中國 300 人結果剛出來的時候，他們想要來討論一下日本什麼時候可以開始這個三期試驗，他們想要去做諮詢、做討論。</p></div><div class="turn" id="t-003410"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-003410">00:34:10</a></div><p>那那時候開了一個大概的報價是一個大概接近 1000 萬 upfront 跟接近 1 億的一個 total deal size。那以一個日本這個重點，日本說實話價格不差，人數也多，又是先進市場，相對是十分重要的。那一個大概 total 接近 1 億的 total deal size 對我們來講已經是一個 recognition，就說欸不錯，日本這樣就可以拿到 1 億的話，全球的一個 global deal，我覺得上看一個 B 就不是一個、不是一個想像。所以我們是拿來做一個討論，只是我們那時候也知道，3001 的重要市場應該要全部在一起，讓一個大藥廠來整體地做統籌、來做開發。所以那時候我們就跟日本的公司說，我們再考慮一下。</p></div><div class="turn" id="t-003455"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-003455">00:34:55</a></div><p>那最近呢是收到一個新的一個印度的公司的一個報價。那印度的公司呢也是想要拿 3001 去做印度的開發，他要自己在印度做三期，他自己未來可以賣。那我們就好奇說那好啊，那你大概是一個什麼樣的條件會想要拿這個項目去印度做開發？那說起來他的條件跟日本差不多。他開一個跟日本差不多的一個這樣一個授權的一個 upfront 的一個、一個 proposal。那我們看了之後呢，當然會去考慮說，這個時候是不是和印度做授權？印度的整個新藥開發的市場，或是新藥這個 total deal size 的 percent 跟日本比是小非常多的。就日本這、印度這個地方的整個新藥的一個份額在全球市場是相對很小的，但他還是可以報出一個跟日本差不多的一個這樣一個條件。</p></div><div class="turn" id="t-003545"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-003545">00:35:45</a></div><p>對我們而言，心境上是支持，就是我們覺得很振奮，又有一個不錯的公司給我們一個很好的 recognition。那印度什麼時候要授權？怎麼授權？是我們現在跟林醫師正在充分討論的。因為印度是一個特別的公司，他有自己一個很特別的新藥準入的一個機制。不瞞您說，印度做三期臨床試驗也蠻特別的，所以我們要非常的是關心說，這個條件式的授權，我們怎麼樣可以去把關他臨床試驗的一個條件，跟怎麼樣去把關他後面這些合約的一個履行。那這些相關是我們目前在討論跟理解...</p></div><div class="turn" id="t-003600"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-003600">00:36:00</a></div><p>了。那我們說實話也不排除，假如說它的整個合約是合理的，那我們可以可以管理的，對整個這個線是推進，項目推進是有幫助的，會在合適的時候進行一個條件式的授權。那這部分就還在討論，只是跟各位做一個分享。我們最高興的就是我們目前的整個 package 在這些不同的市場都可以得到一些 potential 的這些合作機會。</p></div></section><section class="trx-chapter" id="trx-8"><h3>CAR-T armor：p40／IL-23 平台<span class="ch-ts">00:36:35</span></h3><div class="turn" id="t-003635"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-003635">00:36:35</a></div><p>那花點時間跟各位介紹這個我們說實話目前最興奮的 CAR-T 的一個方案。</p></div><div class="turn" id="t-003645"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-003645">00:36:45</a></div><p>那因為都是 3001 的老朋友，還是花一點點時間跟各位科普一下什麼是 CAR-T。那 CAR-T 呢就是平常，CAR-T CAR-T，T 是 T 細胞嘛，就是 T 細胞。平常大家體內都有 T 細胞，就是這個免疫細胞。有 T 細胞，平常 T 細胞看到腫瘤的時候呢，通常是沒反應，因為就是都是自己的嘛，腫瘤也是自己的，T 細胞是自己的，通常它碰到它，反應的機會很低。但是我們要怎麼樣讓這個 T 細胞是會攻擊、會殺細胞的這個免疫細胞，可以去攻擊腫瘤呢？過去二十年大家知道，幫它裝一個 CAR，幫它裝個抗裝個抗體。所以這個 T 細胞一旦裝了一個抗體之後，這個抗體就會去認得腫瘤上面的抗原，腫瘤上特定抗原，HER2 是抗原，像 CD19、CD20 是抗原，總之腫瘤特別會表現那個抗原，藉由抗體抗原的辨識，讓這個 T 細胞把腫瘤細胞殺掉。所以它的作用機轉相對的簡單。</p></div><div class="turn" id="t-003755"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-003755">00:37:55</a></div><p>那這個地方最了不起在哪呢？它是把人體的細胞直接當作藥，所以會說它是一個活藥物。那過去這五年十年的時間，這個 CAR-T 細胞也在整個全球的血液腫瘤裡面得到了很重要的突破，它在很多的淋巴瘤、很多的白血病上，都目前都證明了一個非常好的療效，甚至有人說叫 cure。我們很難得看到一個癌症治療是可以被治癒的。那 CAR-T 是目前有這個 potential 去治癒這些血液腫瘤的一個目前證據最多、最充分、也上市的一個療法。</p></div><div class="turn" id="t-003835"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-003835">00:38:35</a></div><p>但是 CAR-T 的難點在哪？為什麼現在還是很少人真的打得到 CAR-T？一個就是，它是從病人的身上要取出細胞來，所以病人得了癌症、確認了，還要去作一個把 T 細胞取出來的，抽血來，去分離這個 T 細胞，分離這個 T 細胞之後呢，再把這個 CAR，剛剛那個抗體裝到這個 T 細胞上讓它變成 CAR-T，做好的 CAR-T 一包之後呢，再冷凍航空公司運送送到病人旁邊，再慢慢的打進去。打進去之後呢，CAR-T 細胞攻擊腫瘤細胞，cure。所以它的療程要這樣這麼長。</p></div><div class="turn" id="t-003920"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-003920">00:39:20</a></div><p>那這中間的變數就很多了，病人本身的狀況，跟這個製備本身要兩到三週，那這是一個一個病人、一粒一粒在做的，所以它每一粒的成本都很高，臨床上會說你每一粒都要做 QC，每一粒都要做 release，又這麼複雜，需要這些病毒的製備，所以這是很、很耗時耗工耗費金錢的一個治療過程。這個是為什麼目前 CAR-T 的公司呢，每一個公司都要自己去蓋一個小的細胞工廠在醫院的旁邊去幫助這些病人，它是沒辦法大規模的生產，跟大規模的投入到各個不同的病人身上的。所以目前 CAR-T 很好，有 potential 的 cure，但它的問題是什麼呢？製造很複雜，所以費用很高，用到的病人十分有限。更重要的是，目前都在血液腫瘤，血液腫瘤是什麼呢？白血病、淋巴瘤、B細胞瘤，這個占整個腫瘤大概多大呢？不到 10%。因為其實沒有那麼多人得淋巴癌，大部分得什麼呢？肝癌、乳癌、胰臟癌、肺癌，這占 90%。所以目前 CAR-T 很了不起，但它只能用在血液瘤，那很困難。所以這就是目前大家想要去突破的最大的幾個難點。</p></div><div class="turn" id="t-004040"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-004040">00:40:40</a></div><p>大家也很努力，也不只順藥努力，大家都很有努力。剛剛那個製備要兩到三週，要取出細胞、要感染、要養大、要激活、要再打進去，所以大家就漸漸知道了，我如果不要拿出來，不要走體外製備，而直接把這個抗抗體、這個工具包直接靜脈打進去，打進去之後在體內直接去作用在你的 T 細胞上，讓它在體內變成一個 CAR-T，這樣不就不用養來養去、抽來抽去了嗎？所以出現了一個 in vivo CAR-T 的這個製備的流程，就是我其實只打病毒，我只打載體，我只帶這個打這個工具包，體內馬上就變成 CAR-T，之後就可以去攻擊腫瘤。所以這個工具包我可以大量生產，我可以在我可以在像生產抗體藥一樣在工廠大量生產，存了一大堆在在架上，病人一來我就打進去，就得到一個治療，所以我可以擴大商業化、量產，費用就會變低，能夠用的病人就變多。</p></div><div class="turn" id="t-004145"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-004145">00:41:45</a></div><p>那這件事也不是夢，它其實已經初步展現很多的證據了。簡單的一個簡單一個 evidence 就是，這是過去 2025 跟 2026 年幾個很大的 deal 其實已經發生了，表示這些生技公司都已經證明了 in vivo CAR-T 這件事情呢，在病人上是實現的。就你打了這些工具包之後，病人裡面的 CAR-T 真的長出來了，那這些長出來的 CAR-T 也真的在這些血液腫瘤上看到初步的效果了，所以有這些巨額的 deal 已經發生了，七個 B 是超級大的 deal，但當然它是 pioneer，它值得這個溢價，但是也就告訴我們這個技術已經不是個夢，它是一個實現、而且可以有交易發生的一個技術。</p></div><div class="turn" id="t-004235"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-004235">00:42:35</a></div><p>那下一個難點在哪呢？我們要切入什麼呢？實體腫瘤。這就是那不到 10% 的血液瘤，在不到 10% 的血液瘤有這些發展了，下一關是什麼？那個 90% 的實體瘤。這些肝癌、胰臟癌、肺癌到底要怎麼處理呢？目前很多的臨床試驗都在試，但他們也發現了，這些 in vivo 體內生成的 CAR-T 撐不住。你你 T 細胞在體內閒呆呆的，你讓它表現了這個抗體之後，它依然呆呆的，它一下就死掉了，它呆不久。那呆不久、長不大、不能夠一個翻一個、一個翻一個，不能夠好好的擴增，不能有足夠的細胞數目，那甚至它呆一陣子之後，它就沒有功能，它就它就死掉了。所以擴增不足跟 T 細胞耗竭，是目前 in vivo CAR-T 在對付實體腫瘤的時候，大家公認的一個最大的難題。這尤其重要在 in vivo CAR 是因為，細胞製備的 CAR-T 在外面可以養，在外面可以養，你在你在外面用這些培養基，你可以讓它一個你可以讓它長大、長多，但你打到體內你沒有這個過程。所以在做 in vivo CAR-T 這個 pioneer 技術的時候，擴增變得特別的重要，耗竭變得特別的重要。這就是我們現在想要處理的問題。</p></div><div class="turn" id="t-004355"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-004355">00:43:55</a></div><p>我們現在引進的呢是北卡，North Carolina 大學一個教授的一個發明。他是一個教授的發明，然後一個美國專利、歐洲專利，它是一個非常上游的專利。這個專利的內容包含了用這個 p40 的 armor 來治療應用在所有的 CAR-T 技術，就是這樣的一個專利。那為什麼這個 armor 這麼重要呢？剛剛那個問題不是我們發現的，大家都知道，大家也都大家也都 recognize 這個問題，知道要處理。所以所謂第四代 CAR-T 就是要加 armor，因為知道 CAR-T 不夠力。第四代 CAR-T 要加 armor，別人都加什麼呢？已經知道很久的一些 cytokine，像 IL-15、IL-18，各位不用知道太多，它已經被應用得很多了，臨床上都有一些證據了，知道說你把這個 CAR-T 加一些這些活化的因子，它就會長得更好，毒殺效果更好。但是目前呢，初步臨床數據也告訴我們，它的毒性很難控制，因為這個活化 CAR-T 細胞最大的毒性就是免疫風暴，就是免疫風暴太旺盛了，所以這個免疫細胞不聽話到處跑，它就造成免疫風暴。這是它最大的問題。那你把它更活化了，它免疫風暴的機會就更大，所以這毒性風險就更高。所以它目前好像不錯，應該要用，但是又覺得有點困難，怎麼去怎麼去調整那個安全區間變得很困難。</p></div><div class="turn" id="t-004440"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-004440">00:44:40</a></div><p>那這個老師呢，知道這個問題，他就挑了另外一個 cytokine，這個 cytokine 很特別，它平常 CAR-T 細胞碰到腫瘤的時候呢，自己會表現其中一個東西叫做 p19，但它只有 p19 相當於半個月亮，它只是半個月亮，它沒辦法作用。那它缺什麼呢？它缺另外一半 p40。那我們就補給它 p40，補給它 p40 的時候呢，加上這個 CAR-T 細胞碰到腫瘤才會產生 p19，合在一起二合一，就變成一個完整的 cytokine，那也只有這個完整的 cytokine 可以去作用在這個細胞上，讓它不斷的擴增，跟不會耗竭、不會死掉，它會變成一個 memory effector 的 T cell，總之就是有活性的 T cell。那這件事呢，也只有在 CAR-T 碰到腫瘤的時候會發生，因為它有這個 p19 在。簡單來說呢，它是……</p></div><div class="turn" id="t-004500"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-004500">00:45:00</a></div><p>的選擇性的一個 armor 又很強。所以老師用他的數據告訴我們，這個，它是實體瘤，大家也知道實體瘤是大家最想看的，他用了一個實體瘤的動物數據告訴我們，他的這個 armor p40 加上去之後，用在腦癌的細胞，腦癌的細胞小鼠模型，一開始有效，那你在 challenge，腫瘤在復發的時候呢，一般的 CAR-T 都沒用了，都長起來了，只有這個加 p40 的 CAR-T，它依然把腫瘤壓得死死的。所以，它對腦細胞瘤...腦細...腦癌的這個神經母細胞瘤是有用的，而且它可以延長這個 CAR-T 作用的時間。</p></div><div class="turn" id="t-004545"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-004545">00:45:45</a></div><p>胰臟癌，癌王胰臟癌，它是 B7-H3，總之是另外一個靶點，用在 solid tumor 胰臟癌上面，他去跟這個 15、18 去比，剛剛提到 15、18，跟 15、18 去比，15、18 沒用了，他的 p40 還可以。所以，這是一個，他的一個很完整的一個試驗告訴我們，也是在專利內容，這個 p40 這個 armor 呢，可以幫助 CAR-T 待得更久，長得更多，也比這些已經在用的 cytokine 更安全。那甚至呢，像我們...大家上網找也可以直接看得到，這個 p40 的這個機制呢，有一些大陸的醫院也已經用在一些 liquid tumor 上面的驗證了，所以我們知道大家其實都蠻注意到這個 potential 的 armor 技術，那也都知它有這個潛力，可以幫助 CAR-T 作用得更久跟更有效，甚至用在實體瘤上面。</p></div><div class="turn" id="t-004630"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-004630">00:46:30</a></div><p>那目前呢，我們就是希望站在這個風口上。CAR-T 這兩年的交易量非常的大，那說實話，病人也非常的期待可以用到這樣一個免疫治療的技術把腫瘤 cure。那我們...我們順藥站在的一個立基點是，UNC 的這個 IL-23 的 p40 的這個 IP 的這個、這個智財呢，是我們在 2024 年、25 年的時候就跟它授權了，所以我們擁有這個東西的樞紐的一個 IP、的一個智財，智慧財產權。那有了這個 IP 呢，也在去年美國專利拿到了，所以現在任何人要用 p40 這個 armor 用在 CAR-T 上，要去美國做發展，他其實需要順藥的授權。</p></div><div class="turn" id="t-004715"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-004715">00:47:15</a></div><p>那順藥當然可以一直拿在手上自己一直做一直做，做到一個很了不起的 CAR-T 我們再去授權給別人，走一個比較偏 3001 的模式。但是我們也知道，順藥的做 CAR-T 的技術其實不像其他那些已經在 CAR-T 領域耕耘十年的那些公司要來得成熟。就好像我們跟老闆舉例，就是我們得到了一個米其林的輪胎，這個輪胎很棒，但是這個輪胎必須要在車子上它才能夠真的作用。那我們要不要得到一個輪胎去學會做車子呢？其實我們會來不及，所以我們決定去找車子公司合作。所以我們現在的合作模式，就是我們把這個 p40 的 armor，這個美國權利、歐美權利去授權給這些已經耕耘 CAR-T 多年的這些細胞、CAR-T 細胞開發商。</p></div><div class="turn" id="t-004800"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-004800">00:48:00</a></div><p>他們都已經耕耘多年了，他們已經進入臨床了，他們試過 liquid tumor、試過 solid tumor、試過不同的 armor 了。那他們對 p40 有興趣，就證明了這個 potential。更重要是不是證明 potential 而已，他很快就會得到臨床線的數據了。我們需要...剛剛動物都做完了，很好，但我們一樣需要臨床的驗證來證明這個 p40 的了不起。一旦這個 p40 在幾個靶點證明他很了不起之後，癌症的範圍是很大的，你做一個肝癌還有一個胰臟癌，做胰臟癌還有肺癌，那每個癌還有不同的靶點，所以我們會透過這些平台的少數幾個靶點的驗證，充分去建立這整個 p40 這個平台的價值之後呢，把整包所有的靶點，甚至 in vivo CAR-T 這樣一個更 advanced 的一個技術包裝起來，那給大公司去做一個更好的開發。</p></div><div class="turn" id="t-004845"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-004845">00:48:45</a></div><p>其實我們就很希望像剛剛Kelonia跟禮來（Lilly）一樣，這些就是Kelonia，我們現在給他，讓他去發展，最後一起賣給禮來（Lilly），得到個大額的交易。那當然就是我們的期待，現在最重要呢，就是把這個靶點開始累積臨床數據。所以我們現在也有幾個公司正在積極的洽談，很希望說透過一些早期的授權，讓他得到這個使用的權利跟開發的 know-how 之後，我們互相共享臨床線的數據，用這個臨床數據來直接加值這個平台。兩年的風口上能不能夠讓這個大...更多人認識這個 p40 的價值，也更多人知道這個平台未來可以怎麼樣幫助病人，我們就更有機會談到一些大額的交易。那所以雖然他起步很晚，其實我們就這兩年開始累積這樣的 know-how，但我們也期待他很快就會轉換成一些授權的機會，或是未來這些臨床數據可以跟各位做報告。</p></div></section><section class="trx-chapter" id="trx-9"><h3>CRISPR：與引正基因的合作<span class="ch-ts">00:49:30</span></h3><div class="turn" id="t-004930"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-004930">00:49:30</a></div><p>最後一點時間呢，就是這個 CRISPR。那簡單說呢，我們就是要跟引正基因合作去做一個基因編輯的平台。那引正基因很棒，因為他就是經過了不同的迭代，他現在手上有有的編輯技術是最好的，他不是簡單的一些基因剔除或鹼基編輯，他可以做大範圍的插入或變更。那這樣的大範圍的插入跟變更的這個能力呢，就讓他可以去處理很多很困難的 CNS 的疾病。但大家都知道，基因編輯最重要其實是你要到腦細胞做編輯才有用，所以引正也知道，所以他就發展了一個很好的可以做複雜編輯工具遞送的一個好的一個遞送載體，而且這載體不是傳統的腺病毒喔，所以他沒有這些腺病毒的毒性。那跟這樣一個已經非常深耕多年又 unique 的公司合作，我們就有機會透過今年的合作，明年得到初步幾個靶點的篩選，得到動物的實驗數據之後，這些都是高價值、高需求的一些嚴重的神經疾病，有機會就提早可以得到一些授權的機會。</p></div></section><section class="trx-chapter" id="trx-10"><h3>順藥 2.0 與收場<span class="ch-ts">00:50:15</span></h3><div class="turn" id="t-005015"><div class="turn-meta"><span class="spk">葉聖文 總經理</span><a class="ts" href="#t-005015">00:50:15</a></div><p>所以簡單一句話最後一頁跟大家說，我們目前對順藥的一個定位，什麼叫做順藥 2.0 呢？全力發展 3001，因為他就是我們深耕多年目前就是最後一哩路，我們做的所有事情都是期待這個事情的完成可以轉換成一個授權談判的一個重要的時點。除此之外呢，我們也是去發展兩個重要的新創的平台，這平台發展他們重要的原因都是因為他們處理困難的問題，跟這個合作公司具有先進的技術，所以我們希望順藥能夠幫助的是，今天你四、五十歲你中風了，我們有藥給你醫；你四、五十歲你得癌症了，我們有藥給你醫；你四、五十歲發現你漸凍了，你身體動不了了，我們還有一個方式去治療你；甚至小朋友一出生就知道他不能夠正常的發育，我們還可以幫助他一下。所以順藥對於疾病開發是有 commitment 的，我們希望幫助病人，當然更希望幫助病人可以轉換成商業利益跟各位做分享。所以這些是我們的規劃，未來有數據都可以跟各位做報告。謝謝。（現場掌聲）</p></div><div class="turn" id="t-005045"><div class="turn-meta"><span class="spk">主持人</span><a class="ts" href="#t-005045">00:50:45</a></div><p>感謝總經理詳盡的說明與分享，那今天的法人說明會到此結束，謝謝大家。（現場掌聲）</p></div></section>
+  </section>
+</main>
+</div>
+</div>
+
+<footer class="shell">
+  <p>來源：順藥 6535，2026-11-13 黑石財經「戰略臺灣投資論壇」法人說明會，影音 51 分 42 秒。</p>
+  <p>數字參照：ClinicalTrials.gov、台灣藥品臨床試驗資訊網（TPIDB）、順藥官網與公開資訊觀測站重訊。</p>
+  <p>本頁依說明會內容與公開資料整理，不構成投資建議；引用數字前請對照公司官方簡報與公開資訊觀測站。</p>
+</footer>
+<button class="totop" id="totop" type="button" aria-label="回到頂端"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+<div class="deck-hint">← → 換頁，Esc 離開</div>
+<script>
+(function(){
+  var root=document.documentElement, body=document.body;
+  // theme
+  var stored=null; try{stored=localStorage.getItem('f6535-theme')}catch(e){}
+  var pref=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';
+  var qs=new URLSearchParams(location.search), forced=qs.get('theme');
+  root.dataset.theme=forced||stored||pref;
+  var tb=document.getElementById('theme-btn');
+  function label(){tb.textContent=root.dataset.theme==='dark'?'亮色':'暗色';}
+  label();
+  tb.addEventListener('click',function(){
+    root.dataset.theme=root.dataset.theme==='dark'?'light':'dark';
+    try{localStorage.setItem('f6535-theme',root.dataset.theme)}catch(e){}
+    label();
+  });
+  // deck mode
+  var db=document.getElementById('deck-btn'), slides=[], idx=0;
+  function collect(){slides=[].slice.call(document.querySelectorAll('main .hero, main .block'));}
+  db.addEventListener('click',function(){
+    var on=body.dataset.mode==='deck';
+    body.dataset.mode=on?'read':'deck';
+    db.setAttribute('aria-pressed',String(!on));
+    db.textContent=on?'簡報模式':'結束簡報';
+    if(!on){collect();idx=0;slides[0].scrollIntoView({behavior:'auto'});}
+  });
+  document.addEventListener('keydown',function(e){
+    if(body.dataset.mode!=='deck')return;
+    if(e.key==='Escape'){db.click();return;}
+    if(!slides.length)collect();
+    if(e.key==='ArrowRight'||e.key==='PageDown'||e.key===' '){
+      idx=Math.min(idx+1,slides.length-1);slides[idx].scrollIntoView({behavior:'smooth'});e.preventDefault();}
+    if(e.key==='ArrowLeft'||e.key==='PageUp'){
+      idx=Math.max(idx-1,0);slides[idx].scrollIntoView({behavior:'smooth'});e.preventDefault();}
+  });
+  // mobile rail
+  var rt=document.getElementById('rail-toggle'), rail=document.querySelector('nav.rail');
+  rt.addEventListener('click',function(){rail.classList.toggle('open');});
+  rail.addEventListener('click',function(e){if(e.target.tagName==='A')rail.classList.remove('open');});
+  // scrollspy
+  var links=[].slice.call(document.querySelectorAll('nav.rail a'));
+  var map={};links.forEach(function(a){map[a.dataset.target]=a;});
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){
+        links.forEach(function(a){a.classList.remove('active');});
+        var a=map[en.target.id]; if(a)a.classList.add('active');
+      }
+    });
+  },{rootMargin:'-20% 0px -70% 0px',threshold:0});
+  [].slice.call(document.querySelectorAll('main [id]')).forEach(function(el){
+    if(map[el.id])io.observe(el);
+  });
+  // lexicon filter
+  var q=document.getElementById('lex-q'), cnt=document.getElementById('lex-count'),
+      groups=[].slice.call(document.querySelectorAll('.lex-group'));
+  function total(){return document.querySelectorAll('#lexicon tbody tr').length;}
+  if(q){
+    cnt.textContent=total()+' 條';
+    q.addEventListener('input',function(){
+      var v=q.value.trim().toLowerCase(), shown=0;
+      groups.forEach(function(g){
+        var rows=[].slice.call(g.querySelectorAll('tbody tr')), vis=0;
+        rows.forEach(function(r){
+          var hit=!v||r.textContent.toLowerCase().indexOf(v)>-1;
+          r.classList.toggle('hidden',!hit); if(hit){vis++;shown++;}
+        });
+        g.classList.toggle('hidden',vis===0);
+      });
+      cnt.textContent=shown+' / '+total()+' 條';
+    });
+  }
+  // transcript filter
+  var tq=document.getElementById('trx-q');
+  if(tq){
+    tq.addEventListener('input',function(){
+      var v=tq.value.trim().toLowerCase();
+      [].slice.call(document.querySelectorAll('.trx-chapter')).forEach(function(ch){
+        var turns=[].slice.call(ch.querySelectorAll('.turn')), vis=0;
+        turns.forEach(function(t){
+          var hit=!v||t.textContent.toLowerCase().indexOf(v)>-1;
+          t.classList.toggle('hidden',!hit); if(hit)vis++;
+        });
+        ch.style.display=vis?'':'none';
+      });
+    });
+  }
+
+  // ---- v2: reveal / progress / to-top / speaker colors / count-up
+  var secs=[].slice.call(document.querySelectorAll('main .hero, main .block'));
+  var rio=new IntersectionObserver(function(es){es.forEach(function(e){
+    if(e.isIntersecting){e.target.classList.add('in');rio.unobserve(e.target);}});},
+    {rootMargin:'0px 0px -6% 0px',threshold:0});
+  secs.forEach(function(s,i){s.classList.add('rv'); if(i===0){s.classList.add('in');} else {rio.observe(s);}});
+  [].slice.call(document.querySelectorAll('.lex-group')).forEach(function(g){
+    if(!g.querySelector('tbody tr'))g.style.display='none';});
+  var prog=document.getElementById('prog'), tt=document.getElementById('totop');
+  function onScroll(){
+    var h=document.documentElement, max=h.scrollHeight-h.clientHeight;
+    prog.style.transform='scaleX('+(max>0?Math.min(1,h.scrollTop/max):0)+')';
+    tt.classList.toggle('show',h.scrollTop>900);
+  }
+  window.addEventListener('scroll',onScroll,{passive:true}); onScroll();
+  tt.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+  var pal=['var(--accent)','var(--gold)','#7a8cf0','#d6708a','#6fb36f','#c0884a'], seen={}, n=0;
+  [].slice.call(document.querySelectorAll('.turn')).forEach(function(t){
+    var s=t.querySelector('.spk'); if(!s)return; var k=s.textContent.trim();
+    if(!(k in seen))seen[k]=pal[n++%pal.length]; t.style.setProperty('--c',seen[k]);
+  });
+  [].slice.call(document.querySelectorAll('.stat b')).forEach(function(b){
+    var to=parseInt(b.textContent,10); if(isNaN(to))return; b.textContent='0';
+    var cio=new IntersectionObserver(function(es){es.forEach(function(e){
+      if(!e.isIntersecting)return; cio.disconnect(); var t0=performance.now();
+      (function step(t){var p=Math.min(1,(t-t0)/1100), v=Math.round(to*(1-Math.pow(1-p,3)));
+        b.textContent=v; if(p<1)requestAnimationFrame(step);})(t0);});},{threshold:.6});
+    cio.observe(b);
+  });
+})();
+</script>
+</body>
+</html>
