@@ -442,6 +442,16 @@ figure.curve path{stroke-dasharray:900;stroke-dashoffset:0;transition:stroke-das
 .pc h4{margin:0 0 10px;font-family:var(--mono);font-size:11.5px;font-weight:600;letter-spacing:.08em;color:var(--accent)}
 .pc p{margin:0;font-size:14.5px;line-height:1.85;color:var(--ink-2)}
 .pc p strong{color:var(--ink);background:linear-gradient(transparent 62%,var(--gold-soft) 62%)}
+/* case */
+.case{margin:26px 0 0;padding:24px 26px 20px;border-radius:var(--r);background:var(--panel);border:1px solid var(--line-soft);border-top:4px solid var(--gold);box-shadow:var(--shadow)}
+.case h4{margin:0 0 16px;font-family:var(--serif);font-size:17px;font-weight:800;line-height:1.55;display:flex;flex-wrap:wrap;gap:6px 10px;align-items:baseline}
+.case-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line-soft);border:1px solid var(--line-soft);border-radius:14px;overflow:hidden}
+.case-grid>div{background:var(--panel-2);padding:14px 16px}
+.case-grid em{display:block;font-style:normal;font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;color:var(--gold);margin-bottom:6px}
+.case-grid b{display:block;font-size:14.5px;line-height:1.5;margin-bottom:4px}
+.case-grid p{margin:0;font-size:12.5px;color:var(--muted);line-height:1.65}
+.case-take{margin:18px 0 0;font-size:14.5px;line-height:1.9;color:var(--ink-2)}
+.case-take strong{color:var(--ink);background:linear-gradient(transparent 62%,var(--gold-soft) 62%)}
 
 /* ---- responsive ---- */
 @media (max-width:1024px){
@@ -475,6 +485,8 @@ figure.curve path{stroke-dasharray:900;stroke-dashoffset:0;transition:stroke-das
   .rung{grid-template-columns:1fr;padding:16px 16px 16px 20px}
   .rung em{grid-row:auto;justify-self:start;padding:2px 12px}
   .primer-grid{grid-template-columns:1fr}
+  .case{padding:20px 16px 16px}
+  .case-grid{grid-template-columns:1fr}
   .primer-lead{padding:18px 18px;font-size:15.5px}
   .lane li{margin-right:0}
   .lane li::after{display:none}
@@ -712,6 +724,18 @@ figure.curve path{stroke-dasharray:900;stroke-dashoffset:0;transition:stroke-das
       <tr><td>2026-07</td><td>Johnson &amp; Johnson → Sail Biomedicines</td><td>首期付款 7.85 億美元（含 4.65 億美元股權投資）；另有 25.8 億美元收購選擇權</td><td>合作＋收購選擇權</td></tr>
     </tbody></table></div>
     <p class="note">金額與交易結構依各公司公告及媒體報導彙整，各來源口徑略有差異，引用前請以原始公告為準。來源：<a href="https://www.biospectrumasia.com/news/26/27518/lilly-acquires-kelonia-therapeutics-for-7-b-to-advance-in-vivo-car-t-cell-therapies.html" target="_blank" rel="noopener">Lilly–Kelonia 報導</a>、<a href="https://www.jnj.com/media-center/press-releases/johnson-johnson-announces-collaboration-with-sail-biomedicines-to-advance-in-vivo-car-t-programs-and-transform-autoimmune-disease-through-immune-reset" target="_blank" rel="noopener">J&amp;J 新聞稿</a>、<a href="https://biocentury.com/article/658369/lilly-s-orna-deal-marks-fifth-takeout-of-an-in-vivo-car-t-play-in-two-years" target="_blank" rel="noopener">BioCentury：Lilly–Orna</a>，其餘為各公司新聞稿。說明會所稱「七個 B 的 deal」即指 Lilly–Kelonia <a class="tsl" href="#t-004145">41:45</a>。</p>
+
+    <div class="case">
+      <h4>對照案例：Lilly 以最高 70 億美元收購 Kelonia，它的證據有多少？ <span class="stag pub">公開資訊</span></h4>
+      <div class="case-grid">
+        <div><em>適應症</em><b>多發性骨髓瘤（血癌）</b><p>復發或難治、至少接受過三線治療的病人</p></div>
+        <div><em>產品</em><b>KLN-1010</b><p>靶點為 BCMA，靜脈注射，在體內生成 CAR-T（in vivo）</p></div>
+        <div><em>公布的人體數據</em><b>首批 4 位病人</b><p>2025 年 12 月美國血液學年會（ASH）發表，第一期 inMMyCAR 試驗</p></div>
+        <div><em>初步結果</em><b>4 位皆達 MRD 陰性（公司說法）</b><p>媒體報導為 1 位完全緩解、3 位部分緩解；公司稱無第 3 級以上細胞激素風暴與神經毒性</p></div>
+      </div>
+      <p class="case-take"><strong>這個案例說明兩件事：</strong>第一，<strong>市場願意為「人數極少的早期訊號」付出很高的價格</strong>，in vivo CAR-T 現階段的估值，很大一部分是對技術路線的押注。第二，這些訊號都還很早，<strong>療效能維持多久尚無資料</strong>，且標的是 CAR-T 本來就有效的血癌；<strong>實體腫瘤（肝癌、胰臟癌等）至今仍是尚未被證明的缺口</strong>，這也是順藥 p40 armor 想切入的位置（見 A5、A7）。</p>
+      <p class="note">來源：<a href="https://www.businesswire.com/news/home/20251209935959/en/Kelonia-Therapeutics-Presents-First-in-Human-Data-From-Phase-1-inMMyCAR-Study-of-KLN-1010-in-vivo-BCMA-CAR-T-Therapy-at-the-American-Society-of-Hematology-ASH-2025-Annual-Meeting" target="_blank" rel="noopener">Kelonia 新聞稿（Business Wire）</a>、<a href="https://www.cancernetwork.com/view/investigational-bcma-car-t-yields-responses-safety-in-r-r-multiple-myeloma" target="_blank" rel="noopener">CancerNetwork</a>、<a href="https://www.emjreviews.com/hematology/news/in-vivo-car-t-shows-promise/" target="_blank" rel="noopener">EMJ</a>。各來源對療效細節的描述略有差異；此為 2025 年 12 月的首批數據，之後或有更新。</p>
+    </div>
 
     <h3 class="ah"><i>A5</i>下一關：實體腫瘤，以及 in vivo 特有的難題 <a class="tsl" href="#t-004235">說明會 42:35</a></h3>
     <p class="ap">公司指出，in vivo 生成的 CAR-T 面對實體腫瘤時，最大的共同難題是<strong>擴增不足</strong>與 <strong>T 細胞耗竭</strong>：細胞數量長不起來，或活一陣子就失去功能。體外製備的 CAR-T 可以先在培養基裡養大再回輸，in vivo 沒有這個步驟，所以擴增與抗耗竭特別關鍵。這個缺口，就是公司引進 p40 armor 要處理的問題。</p>
